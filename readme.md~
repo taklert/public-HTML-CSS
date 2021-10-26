@@ -28,5 +28,3 @@ A képeket az unsplash-ről szedtem le, nem egy ember produktuma. De "összehozt
 Jó lenne ha ez a srác készítene magáról egy olyan képet is, ahol törökülésben ül, mert már van erre ötletem (kivágnám a háttérből és körbefuttatnám őt szöveggel, de itt még nem tart a CSS vagy VueJS vagy akármi tudományom, de nem baj, mert majd ti megtanítjátok :-D )
 
 Közben létrehoztam egy [public-HTML-CSS](https://github.com/taklert/public-HTML-CSS) git repót, hogy könnyebben közzétehessem a leckék anyagait, mármint azokat, amelyekre azt mondjátok, hogy nem baj, ha bárki számára elérhető. Mivel nincs gitPro előfizetésem, ezért csak úgy lehet nem publikus repóm, ha előfizetek rá. Ha ez a megoldás nem jó, akkor a leckék anyagainak a közlését tovább folytatom a gdrive-omon, de úgy gondolom, hogy a git kezelésének elsajátítása egy nagyon **hasznos és jövőbe mutató** pazarlása volt a drága leckeidőnek.. :-D
-
-![a helyi mappám tartalma](screenshot.jpg "a helyi mappám tartalma")
