@@ -1,4 +1,4 @@
-# **Üdv Kedves Látogató!**
+# **A mappa tartalma:**
 
 Ez itt a public-HTML-CSS mappa, vagy könyvtár, Itt kapnak helyet a megoldott feladataim, továbbá
 egyéb OWT-vel kapcsolatos ötlet, "szösszenet", vagy akármi.
