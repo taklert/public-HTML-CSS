@@ -11,3 +11,4 @@ egyéb OWT-vel kapcsolatos ötlet, "szösszenet", vagy akármi.
 
 ![felix-foto-projekt](felix-foto-projekt.jpg "felix-foto-projekt")
 ![a HTML-1 tartalma](sajat_bemutatkozo_oldal.jpg "a HTML-1 tartalma")
+![HTML-2 tartalma](egyeni_tablazat.jpg "HTML-2 tartalma")
