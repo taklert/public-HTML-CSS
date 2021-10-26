@@ -7,6 +7,8 @@ egyéb OWT-vel kapcsolatos ötlet, "szösszenet", vagy akármi.
 
 - a HTML-1 mappa/vagy könyvtár (hogyan szabatosabb? valaki tehetne javaslatot) tartalmazza a HTML-1 lecke feladat saját szám íze szerinti megoldását
 
+- a HTML-2 tartalmazza a táblázatos és validátoros feladatok megoldását.
+
 ^^tehát ezen tematika mentén, minden egyes projekt vagy feladat végeztével frissíteni fogom a readme.md-ket almappákban/folderekben/könyvtárakban/whatever belül is. Szép (ez mondjuk szubjektív), beszédes képernyőképekkel fogom tarkítani, így aki letölti, látja mire számíthat.
 
 ![felix-foto-projekt](felix-foto-projekt.jpg "felix-foto-projekt")
