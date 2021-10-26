@@ -1,7 +1,7 @@
 # **Üdv Kedves látogató!**
 
 - a felix-foto-1 mappában található a HTML2 feladathoz tartozó megoldás
+azért helyeztem saját külön elérési útvonalra, hogy a későbbiekben könnyebben menedzselhető legyen a Félix Fotó projekt.
 - a HTML fájok tartalmazzák a próbálkozásaimat.
-- azért adtam neki itt elkülönülő helyet a könyvtárrendszerben, mert így könnyebben nyomon követhető a Félix Fotó projekt
 
-![a helyi mappám tartalma](screenshot.jpg "a helyi mappám tartalma")
+![felix-foto-1](felix-foto-projekt.jpg "felix-foto-1")
