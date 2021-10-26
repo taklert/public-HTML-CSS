@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img{
+        max-height: 300px;
+}
+/*t&aacute;bl&aacute;zat cell&aacute;inak st&iacute;lusa*/
+td, th{
+        border-style: solid;
+        border-color: #242424;;
+        border-radius: 0px;
+        border-width: 3px;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        font-size: large;
+        padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}
+
+/* Style the header */
+header {
+  background-color: #cccccc;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  /*height: 300px;  only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #ffffff;
+  /*height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>            
+<header>
+    <h1>F&eacute;lix Fot&oacute;</h1>
+</header>
+
+<section>
+<img src="img/portrait.jpg" alt="F&eacute;lix">
+  <nav>
+    <ul>
+      <li><a href="#rolam">R&oacute;lam</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="#rolam">R&oacute;lam</h2>
+    
+    <p>
+        Hell&oacute;! A nevem <b>Varga F&eacute;lix</b>, 
+        portr&eacute;fot&oacute;z&aacute;ssal, esem&eacute;nyfot&oacute;z&aacute;s &eacute;s rekl&aacute;mfot&oacute;z&aacute;ssal kezdtem foglalkozni, valamikor a 2000-es &eacute;vek elej&eacute;n.
+        Az ut&oacute;bbi 11 &eacute;vben b&odblac;v&iacute;tettem a portf&oacute;li&oacute;mat, v&aacute;llalok esk&uuml;v&odblac;i fot&oacute;z&aacute;st,
+        gyermek/&uacute;jsz&uuml;l&ouml;tt fot&oacute;z&aacute;st, csal&aacute;dfot&oacute;z&aacute;st, tov&aacute;bb&aacute; egyedi k&eacute;r&eacute;seket is teljes&iacute;tek.
+    </p>
+    <h2>Ahol dolgozom</h2>
+    <p>
+        P&aacute;r k&eacute;p erej&eacute;ig l&aacute;thatod, hol dolgozom:
+    </p>
+    <img src="img/muterem_1.jpg" alt="F&eacute;lix">
+    <img src="img/muterem_3.jpg" alt="F&eacute;lix">
+    <img src="img/muterem_2.jpg" alt="F&eacute;lix">
+    <h3>St&uacute;di&oacute;mban el&eacute;rhetsz az al&aacute;bbi id&odblac;pontokban:</h3>
+            <table>
+                <thead>
+                    <tr>
+                    <th colspan= "4">Nyitvatart&aacute;s</th>
+                    </tr>
+                    <tr>
+                    <th>H&eacute;tf&odblac;</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Cs&uuml;t&ouml;rt&ouml;k</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>14-18h</td>
+                    <td>10-14h</td>
+                    <td>16-18h</td>
+                    <td>14-17h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--validatoron átpaszírozva..-->
+<html lang="hu">
+<head>
+<script src="https://kit.fontawesome.com/31623b48e3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Bemutatkoz&aacute;s</title>
+<style>
+.body {
+  color:#d8dee9;
+  background-color: #2E3440;
+  font-family: roboto,sans-serif;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  padding: 1px;
+  color: #2E3440;
+  background-color: #8FBCBB;
+  text-align: justify;
+  font-family: roboto,sans-serif;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+}
+a:link {
+  color: #b38eac;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ce8771;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eacb8d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #a3be8e;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+</head>
+<body class="body">
+  <div class="sticky"><p style="padding-left: 20px; padding-right: 20px; font-size:30px;">Bemutatkozás Petr&aacute;nak</p></div>
+  <img src="img/meh.jpg" alt="taklert" style="float:left;width:150px;height:200px; margin-right:15px; margin-bottom:15px; margin-top:15px;">
+  <div style="padding-left: 20px; padding-top:20px;">
+    <h2>Kedves Petra,</h2>
+    <br><b>Takler Tam&aacute;s</b> vagyok, f&#337;&aacute;ll&aacute;sban d&iacute;szlet&eacute;p&iacute;t&#337; egy sz&iacute;nh&aacute;zban.
+    <br>Nagyon r&eacute;g&oacute;ta szeretn&eacute;m magam k&eacute;pezni HTML, CSS &eacute;s design t&eacute;ren! Kor&aacute;bban m&aacute;r volt ezir&aacute;ny&uacute; pr&oacute;b&aacute;lkoz&aacute;som, de az &eacute;let m&aacute;shogy hozta..
+    <p><i>Kedvenc id&eacute;zetem:</i>
+    <blockquote>"Az id&#337; nem sz&uuml;nteti meg a probl&eacute;m&aacute;t, csak m&aacute;s form&aacute;ban hozza &uacute;jra el&#337;."
+    <br><strong>Agatha Christie</strong>
+    </blockquote>
+    <p><br>N&eacute;h&aacute;ny inf&oacute; r&oacute;lam:
+    <ul>
+        <li>egy vid&eacute;ki kisv&aacute;rosban &eacute;lek, k&eacute;t gyermek apja vagyok (egy&eacute;bk&eacute;nt ikrek)</li>
+        <li>motorral j&aacute;rok dolgozni, de amikor van egy kis &quot;apaid&#337;m&quot; n&eacute;ha csak &uacute;gy megyek ki a vil&aacute;gb&oacute;l</li>
+        <li>rajongok a s&ouml;t&eacute;t st&iacute;lus&uacute; asztalt&eacute;m&aacute;k&eacute;rt, blog/wordpress/egy&eacute;b sz&iacute;ns&eacute;m&aacute;k&eacute;rt, egyik kedvencem a <a href="https://www.nordtheme.com">Nord</a></li>
+        <li>van egy blogom, amit a tanfolyamon tanultak seg&iacute;ts&eacute;g&eacute;vel szeretn&eacute;k tov&aacute;bbfejleszteni</li>
+        <li>basszus git&aacute;rozni (is) tanulok, azaz ink&aacute;bb csak brummogok vele a gyerekeknek f&uuml;rd&eacute;s k&ouml;zben</li>
+    </ul>
+    <br>Egyel&#337;re ennyit r&oacute;lam.. <i class="fas fa-smile"></i>
+  </div>
+	<footer>
+	<p>Author: Hege Refsnes<br>
+	<a href="mailto:hege@example.com">hege@example.com</a></p>
+	</footer>
+</body>
+</html>

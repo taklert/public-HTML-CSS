@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img{
+    max-height: 240px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #c7c7c7;
+    border-width: 5px;
+    background-color: #c7c7c7;
+    
+}
+.portrait{
+    max-width:80%;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 5px;
+    background-color: #ffffff;
+}
+h1{
+    padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-image: url('img/triangle_pattern.jpg');
+  color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  min-width: fit-content;
+  text-align: justify;
+  width: 20%;
+  
+}
+
+.main {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  float: left;
+  text-align: justify;
+  width: 40%;/* The width is 60%, by default */
+}
+
+.right {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  float: left;
+  min-width: fit-content;
+  text-align: justify;
+  width: 20%;/* The width is 20%, by default */
+}
+
+.divbottom{
+    background-color: #000000;
+    height: 100px;
+    min-width: auto;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right, .divbottom {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+    <h1>F&eacute;lix Fot&oacute;</h1>
+<div class="left">
+  <p>Left Menu</p>
+  <img class="portrait" src="img/portrait.jpg" alt="F&eacute;lix">
+</div>
+
+<div class="main">
+    <h2>R&oacute;lam</h2>
+            <p>
+                Hell&oacute;! A nevem <b>Varga F&eacute;lix</b>, 
+                portr&eacute;fot&oacute;z&aacute;ssal, esem&eacute;nyfot&oacute;z&aacute;s &eacute;s rekl&aacute;mfot&oacute;z&aacute;ssal kezdtem foglalkozni, valamikor a 2000-es &eacute;vek elej&eacute;n.
+                Az ut&oacute;bbi 11 &eacute;vben b&odblac;v&iacute;tettem a portf&oacute;li&oacute;mat, v&aacute;llalok esk&uuml;v&odblac;i fot&oacute;z&aacute;st,
+                gyermek/&uacute;jsz&uuml;l&ouml;tt fot&oacute;z&aacute;st, csal&aacute;dfot&oacute;z&aacute;st, tov&aacute;bb&aacute; egyedi k&eacute;r&eacute;seket is teljes&iacute;tek.
+            </p>
+                <h2>Ahol dolgozom</h2>
+            <p>
+                P&aacute;r k&eacute;p erej&eacute;ig l&aacute;thatod, hol dolgozom:
+            </p>
+            <img src="img/muterem_1.jpg" alt="F&eacute;lix">
+            <img src="img/backpack.jpg" alt="F&eacute;lix">
+            <img src="img/muterem_2.jpg" alt="F&eacute;lix">
+            
+</div>
+
+<div class="right">
+    <h3>St&uacute;di&oacute;mban el&eacute;rhetsz az al&aacute;bbi id&odblac;pontokban:</h3>
+    <table>
+        <thead>
+            <tr>
+            <th colspan= "4">Nyitvatart&aacute;s</th>
+            </tr>
+            <tr>
+            <th>H&eacute;tf&odblac;</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Cs&uuml;t&ouml;rt&ouml;k</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>14-18h</td>
+            <td>10-14h</td>
+            <td>16-18h</td>
+            <td>14-17h</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="divbottom">
+</div>
+
+</body>
+</html>

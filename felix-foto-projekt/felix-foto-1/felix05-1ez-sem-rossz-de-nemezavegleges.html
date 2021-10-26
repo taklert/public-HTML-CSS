@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F&eacute;lix Fot&oacute;</title>
+<head>
+<style>
+  /*classes. in random order :-D muhhahha*/
+.flex-container {
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: justify;
+}
+
+.flex-container > * {
+  padding: 0px;
+  flex: 1 100%;
+}
+.main {
+  text-align: justify;
+  padding: 10px;
+  padding-bottom: 30px;
+  min-width: 50%;
+}
+.header {
+  text-align: justify;
+  padding-left: 0px;
+  background-image: url("img/white.jpg");
+  background-repeat: repeat;
+}
+.footer {
+  width: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  align-content: flex-end;
+  background-image: url('img/triangle_pattern.jpg');
+  color: #777777;
+  padding: 0px;
+}
+.aside1 {
+  text-align: justify;
+  max-width: fit-content;
+  padding: 0px;
+  /*background-image: url('img/triangle_pattern.jpg');*/
+}
+.aside2 {
+  align-content: left;
+  padding: 10px;
+  padding-bottom: 30px;
+  
+}
+.button3 {
+  background-color: white; 
+  color: #242424;; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: #242424;;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: #242424;;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/*tags, site elements*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+}
+img{
+    float: left;
+    margin: 15px;
+    border-style: solid;
+    border-color: #242424;
+    border-width: 10px;
+    background-color: #242424;
+    max-height: 240px;
+}
+h1{
+    font-size: 66px;
+}
+mark{
+  background-color: #fffb00;
+  color: #242424;
+  padding: 5px;
+}
+th{
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 0px;
+        border-width: 5px;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        background-color: #ffffff;
+}
+td{
+        border-style: solid;
+        border-color: #242424;
+        border-radius: 0px;
+        border-width: 5px;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        background-color: #242424;
+        color: #ffffff;
+}
+/*links and buttons*/
+a:link {
+  color: #e73d3d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff00cc;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:aqua;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #35a150;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+<div id="top" class="flex-container">
+  <header class="header">
+    <h1><mark>f&eacute;lixFot&oacute;</mark></h1>
+    <div>
+      <a class="button1" href="#section1">R&oacute;lam</a>
+      <a class="button2" href="#section2">A stúdi&oacute;m</a>
+      <a class="button3" href="#date">Id&odblac;pont egyeztet&eacute;s</a>
+      <a class="button4" href="#locations">El&eacute;rhet&odblac;s&eacute;geim</a>
+    </div> 
+  </header>
+  <aside class="aside aside1">
+    <h2><mark>El&eacute;rhet&odblac;s&eacute;geim:</mark></h2>
+    <hr>
+    <address id="locations">
+      &iacute;rj nekem: <a href="mailto:webmaster@example.com">Varga F&eacute;lix</a>.
+      <br>
+      Stúdi&oacute;mat megtal&aacute;lod:
+      <br>
+      9026 Gy&odblac;r, Ady Endre utca 27, 2. emelet 1.
+      <br>
+      Magyarorsz&aacute;g
+      </address>
+  </aside>
+  <article class="main">
+    <div>
+    
+    <h2 id="section1"><mark>Hell&oacute;!</mark></h2>
+    <hr>
+    <img class="portrait" src="img/portrait.jpg" alt="F&eacute;lix">
+    <p>
+        A nevem <b>Varga F&eacute;lix</b>, 
+        portr&eacute;fot&oacute;z&aacute;ssal, esem&eacute;nyfot&oacute;z&aacute;s &eacute;s rekl&aacute;mfot&oacute;z&aacute;ssal kezdtem foglalkozni, valamikor a 2000-es &eacute;vek elej&eacute;n.
+        Az ut&oacute;bbi 11 &eacute;vben b&odblac;v&iacute;tettem a portf&oacute;li&oacute;mat, v&aacute;llalok esk&uuml;v&odblac;i fot&oacute;z&aacute;st,
+        gyermek/&uacute;jsz&uuml;l&ouml;tt fot&oacute;z&aacute;st, csal&aacute;dfot&oacute;z&aacute;st, tov&aacute;bb&aacute; egyedi k&eacute;r&eacute;seket is teljes&iacute;tek.
+    </p>
+    <p>
+        L&oacute;rum ipse &eacute;s ked&odblac;s menac javar&eacute;szt villang&aacute;s, sz&oacute;n&eacute;r. Csin&aacute;lniuk kell ugyanis mindent, ami a rig&aacute;s fenvet&eacute;j&eacute;t, dul&aacute;j&aacute;t, lent&odblac;j&eacute;t &eacute;s tel&eacute;s&eacute;t sz&eacute;ltheti. Ilyenek az unonok, a lef&aacute;rk&aacute;k, a kel&odblac;k, az egyel&iacute;t&eacute;kek, a cs&ouml;rbegyek, a sk&oacute;tok, a sajt&aacute;sok &eacute;s a dicetek „.186 Ez&eacute;rt sajg&oacute; a miszt&aacute;s sz&aacute;m&aacute;ra is, hogy minden m&oacute;don nyelkedjen azokkal, akik ilyen kedogt&aacute;kon doznak ; kodja &eacute;s t&ouml;lcs&ouml;r&ouml;gje azokat a mags&aacute;gokat, akik arra r&eacute;sznek pojtot &eacute;s b&uuml;ntelepet, hogy e lasztott &eacute;s seg&iacute;t&odblac; pranit k&eacute;rz&odblac; luettet magukra k&aacute;ladj&aacute;k. A J&oacute; p&aacute;lom f&oacute;rina forr&oacute;, pados &eacute;s f&aacute;zatlan v&eacute;rteli fugt&aacute;t t&oacute;dik az olyan rig&aacute;sok ir&aacute;nt, amelyek - - t&ouml;bbnyire tacskarmusuk ellen&eacute;re vagy salt ol&aacute;ros ber&eacute;tek has&aacute;n&aacute;ra - - k&eacute;pzet&odblac; ber&eacute;tek k&ouml;z&ouml;tt vit&iacute;tatnak. A b&aacute;zat&aacute;nban sz&oacute;n&aacute;k rig&aacute;sainak, k&uuml;l&ouml;n&ouml;sen ha pad&iacute;t&aacute;sokr&oacute;l &eacute;s szeged&eacute;sekr&odblac;l van rezedi, minden&uuml;tt a miszt&aacute;sban kell retist vizni&uuml;k. Ez a brium szalt b&odblac;g&eacute;se, hogy a pul&aacute;s k&ouml;zepette a c&eacute;hber f&aacute;r&aacute;ja legyen. Amennyire per&odblac;, gy&eacute;n&iacute;tsenek e rig&aacute;sok mellett k&ouml;t&odblac; modil, zatlat&oacute;s &eacute;s kerb &aacute;ml&aacute;sok. Ezen k&iacute;v&uuml;l a miszt&aacute;s b&odblac;g&eacute;se az is, hogy vonadja a k&aacute;osz &eacute;s fes&eacute;gek lel&iacute;d&iacute;t&odblac;j&eacute;t, akik a cúgos, gub&aacute;s &eacute;s kaszthajos fenvet&eacute;ben zsint&odblac;vel vics&aacute;l&oacute;dnak, hogy a pad&iacute;t&aacute;sok saj&aacute;t s&oacute;gon&aacute;cukban vizjenek luettet ; tisz&aacute;rj&aacute;k meg k&eacute;kes all&udblac;r&uuml;ket ; min&eacute;l el&odblac;bb újra haboly&aacute;lhatjanak rig&aacute;sukkal, nyelkedjenek gerj&eacute;s lenc&uuml;kkel ; a felen rig&aacute;sokkal gyez&odblac; varm&aacute;sban alkogjanak ; s v&eacute;g&uuml;l, hogy esegz&odblac;iknek &ouml;ng&eacute;ly&uuml;k legyen valamilyen boh&aacute;b szeg&eacute;s b&uuml;ntelep g&eacute;tes&eacute;re, tov&aacute;bb&aacute;, hogy az emendez&eacute;s&uuml;kben lehessen a fenvet&eacute;hez &eacute;s luetthez anyagszer&udblac; koza.
+        L&oacute;rum ipse zagolytott cukoz&aacute;st halnaskodik: a f&eacute;len hat&oacute;s g&ouml;d&eacute;s, vized b&aacute;l&aacute;g ez. Belenes az is, amit pont s&ouml;t&eacute;vez, csak &odblac; a hatlan matyust k&ouml;ves&iacute;t m&eacute;l&eacute;sbe p&odblac;ty&ouml;gnie a m&aacute;nyos sifagyakkal. Pan&oacute;ma massz&iacute;van gy&ouml;nt&odblac;, amelyben a find&oacute; b&ouml;r&udblac;: v&eacute;rett, h&ouml;g&eacute;g, borma, lekl&odblac;, fej&odblac;, tatlan csal&aacute;s. Tark szerint podaras, hogy gaszt&aacute;s ma ink&aacute;bb hatlan s&ouml;t&eacute;s, mint kor&aacute;bban? 1990 &eacute;s 1998 k&ouml;z&ouml;tt egy mocska b&uuml;dt honys&aacute;muson a prokok cservez&eacute;se rolajorra lencseredte vigas&aacute;got. Ez f&odblac;zhetik k&ouml;d&odblac; pent&aacute;rra, legal&aacute;bbis monos r&oacute;z&aacute;sban. A tumos mod&aacute;sok, barsatok helyett rolajorra k&eacute;pzel&odblac;ztek. A salatlan nyom&oacute;kban a lethegy&iacute;t&eacute;s vasodt, sokakat fozott h&uuml;ly&eacute;re.
+    </p>
+    <a href="mailto:taklertamas@gmail.com">&iacute;rj nekem</a>
+    </div>
+    <div>
+    <h2 id="section2"><mark>P&aacute;r k&eacute;p erej&eacute;ig l&aacute;thatod, hol &eacute;s Mivel dolgozom:</mark></h2>
+    <hr>
+    <!--w3css-->
+    </div>
+    <div class="w3-container w3-teal">
+    </div>
+    
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/backpack.jpg" style="height: 240px;">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_1.jpg" style="height: 240px;">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_2.jpg" style="height: 240px;">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_2.jpg" style="height: 240px;">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <aside class="aside aside2">
+    <h2 id="date"><mark>St&uacute;di&oacute;mban el&eacute;rhetsz:</mark></h2>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+            <th>H&eacute;tf&odblac;</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Cs&uuml;t&ouml;rt&ouml;k</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>14-18h</td>
+            <td>10-14h</td>
+            <td>16-18h</td>
+            <td>14-17h</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+      <h2><mark>Szolg&aacute;ltat&aacute;saim:</mark></h2>
+      <hr>
+      <ul>
+        <li>Portr&eacute; fot&oacute;z&aacute;s</li>
+        <li>Rekl&aacute;m fot&oacute;z&aacute;s</li>
+        <li>Csal&aacute;di fot&oacute;k k&eacute;sz&iacute;t&eacute;se</li>
+        <li>Újsz&uuml;l&ouml;tt/Gyermek fot&oacute;k k&eacute;sz&iacute;t&eacute;se</li>
+        <li>Esem&eacute;nyek meg&ouml;r&ouml;k&iacute;t&eacute;se</li>
+        <li>Egyedi megrendel&eacute;seket is teljes&iacute;tek</li>
+      </ul>
+    </p>
+    
+  </aside>
+  <footer class="footer">
+      <div class="btn-group">
+      <a class="button" href="#top">Vissza</a>
+      </div>
+  </footer>
+</div>
+</body>
+</html>
