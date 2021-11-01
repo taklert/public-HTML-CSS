@@ -2,12 +2,12 @@ body {
     align-content: center;
 }
 
-h1, h2, h3 {
+h1 {
         font-weight: bold;
 }
 
 mark {
-    background-color: rgb(99, 84, 63);
+    background-color: #ffb751;
     border-radius: 3px;
     padding: 5px;
 }
