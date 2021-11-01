@@ -10,12 +10,6 @@ p {
     text-align: justify;
     padding: 10px;
 }
-.header {
-    background-repeat: no-repeat;
-    background-image: url("/HTML-3/gyakorlat-1/img/makos-guba.jpg");
-    padding: 20px;
-    width: 80%;
-}
 table {
     align-items: center;
 }
