@@ -1,3 +1,6 @@
+body {
+    background-color: blanchedalmond;
+}
 h1 {
         font-weight: bold;
 }
@@ -9,7 +12,22 @@ mark {
 p {
     text-align: justify;
     padding: 10px;
+    background-color: #ffebcd8c;
+}
+.header {
+    width: 60%;
+    text-align: justify;
+    background-image: url("../img/makos-guba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.aside1 {
 }
 table {
     align-items: center;
+}
+ul, ol, li {
+    background-color: #ffebcd8c;
+    padding: 10px;
 }
