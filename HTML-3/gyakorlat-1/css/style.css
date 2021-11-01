@@ -10,8 +10,9 @@ p {
     text-align: justify;
     padding: 10px;
 }
-div {
-    background-image: url('makos-guba.jpg');
+.header {
+    background-repeat: no-repeat;
+    background-image: url("/HTML-3/gyakorlat-1/img/makos-guba.jpg");
     padding: 20px;
     width: 80%;
 }
