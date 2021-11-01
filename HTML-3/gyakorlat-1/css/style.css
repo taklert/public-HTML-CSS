@@ -15,6 +15,9 @@ body {
     background-repeat: no-repeat;
     background-image: url('img/makos-guba.jpg');
 }
+.header {
+    background-image: url('img/makos-guba');
+}
 table {
     align-items: center;
 }
