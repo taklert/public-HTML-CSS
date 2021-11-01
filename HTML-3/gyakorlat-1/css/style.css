@@ -10,13 +10,10 @@ p {
     text-align: justify;
     padding: 10px;
 }
-
-body {
-    background-repeat: no-repeat;
-    background-image: url('img/makos-guba.jpg');
-}
-.header {
-    background-image: url('img/makos-guba');
+div {
+    background-image: url('makos-guba.jpg');
+    padding: 20px;
+    width: 80%;
 }
 table {
     align-items: center;
