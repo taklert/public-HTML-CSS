@@ -1,0 +1,18 @@
+body{
+    align-content: center;
+    }
+    h1, h2, h3{
+        font-weight: bold;
+    }
+mark{
+    background-color: blanchedalmond;
+    border-radius: 3px;
+    padding: 5px;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+table{
+    align-items: center;
+}
