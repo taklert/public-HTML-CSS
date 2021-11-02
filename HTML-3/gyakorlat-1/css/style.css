@@ -1,5 +1,5 @@
 body {
-    background-color: blanchedalmond;
+    background-color: #397fd4;
 }
 h1 {
         font-weight: bold;
@@ -22,12 +22,9 @@ p {
     background-size: cover;
     padding: 10px;
 }
-.aside1 {
-}
 table {
     align-items: center;
 }
 ul, ol, li {
     background-color: #ffebcd8c;
-    padding: 10px;
 }
