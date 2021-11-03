@@ -75,25 +75,25 @@ p {
     padding: 10px;
 }
 a:link {
-    color: #313131;
+    color: #428531;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: #33423d;
+    color: #364236;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: #837964;
+    color: #4ec074;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:active {
-    color: #837964;
+    color: #460000;
     background-color: transparent;
     text-decoration: none;
   }
