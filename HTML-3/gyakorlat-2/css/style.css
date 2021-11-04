@@ -4,28 +4,38 @@ body {
 }
 h1 {
     color: indigo;
-    font-size: 30px;
-    border: 1px solid indigo;
-    text-align: center;
+    font-size: 5rem;
+    border: none;
+    text-align: left;
+    padding-left: 2%;
 }
 h2 {
     color: indigo;
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 p {
-	font-size: 20px;
+	font-size: 1rem;
 }
 li {
-    font-size: 20px;
+    font-size: 1rem;
 }
 .bevezeto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 #figyelmeztetes {
 	text-align: center;
     background-color: indigo;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
 }
-
+img {
+    width: 40%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+.clearfix {
+    clear: both;
+}
