@@ -1,0 +1,35 @@
+body {
+    backgruond-color: #f2f2f2; 
+}
+h1 {
+    color: #618c03;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: normal;
+    font-size: 30px;
+    text-aling: center; 
+}
+h2 {
+    color: ##bf6849; 
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: normal;
+    font-size: 24px; 
+}
+p {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #2c4001;
+	font-size: 20 px; 
+}
+ul {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #618c03;;
+    font-size: 20px;
+}
+.kiemelt-bekezdes {
+    background-color: #abd904; 
+    border: 5px solid #618c03 
+    font-family: "Brush Script MT", cursive;
+}
+#fontos {
+    color: #bf6849;; 
+
+

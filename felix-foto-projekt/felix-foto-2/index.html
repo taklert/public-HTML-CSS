@@ -1,0 +1,299 @@
+<!DOCTYPE html><!--már csak a linkekkel kell csinálnom valamit, mert ez így nagyon ronda.. lehet, hogy nem rakok inkább háttérszínt mögéjük.. na meg a header backround.. majd készül egy végtelen mintás változat-->
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F&eacute;lix Fot&oacute;</title>
+    <style>
+      /*classes. in random order :-D muhhahha*/
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;  
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      text-align: justify;
+    }
+
+    .flex-container > * {
+      padding: 0px;
+      flex: 1 100%;
+    }
+    /*the main sequence of the pake, here goes the article, and the image box
+    Ez itten a fő eleme a weboldalnak, ide kerülnek a cikkek, meg a képes izéé, az a képgaléria vagy mi..
+    mármint, ha majd megtanulok képgalériát készíteni.. Egyelőre megelégszem ezzel az agyon div-ezett megoldással*/
+    .main {
+      text-align: justify;
+      padding: 10px;
+      padding-bottom: 30px;
+      min-width: 50%;
+    }
+    /* Ez a fejléc.. Itt van a vállalkozás neve, meg a logoja, meg valami durva háttér, ami felkelti a figyelmet és meg is tartja.. elméletileg
+    This is the header of the webpage.. Here goes the branding of the owner,
+    the noteworthy background image, what amaze the reader and hopefully catch his/her attention
+    ^^ azért írok angolul is kommentet, mert egyrészt tanulom az angolt is, másrészt, lehet, hogy létezik olyan angol anyanyelvű ember, akinek
+    az a hobbija, hogy magyar nyelvű weboldalsablonok forráskódját olvassa */
+    .header {
+      text-align: justify;
+      padding-left: 0px;
+      background-image: url("img/white_alternate.jpg");
+      background-size: auto;
+    }
+    /*Itt jön a lábléc.. Hát egyelőre csak egy "vissza"-gombot tettem bele, lásd lejjebb valahol a legalján.. de terveim azok, hogy majd ide jön egy
+    menüpontokat felsorakoztató, de szöveges linkelése a webszájt fontosabb fő felületeinek. Egyelőre ez irreleváns, majd a harmadik, vagy a negyedik leckére
+    megoldom (nem lesek ám, de sejtem, hogy a több oldalas weboldal jön, külön CSS fájllal)*/
+    .footer {
+      width: auto;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      align-content: flex-end;
+    }
+    /*Ez a jobb oldali oszlopa a weboldalnak. Legalábbis ha jól csináltam.. :-D */
+    .aside1 {
+      text-align: justify;
+      max-width: fit-content;
+      padding: 0px;
+      /*background-image: url('img/triangle_pattern.jpg');*/
+    }
+    /*Ez meg a bal oldal.. nem politika, tájolás.. :-D */
+    .aside2 {
+      align-content: flex-end;
+      padding: 10px;
+      padding-bottom: 30px;
+      
+    }
+    /* buttonz ez itt a gombok stilizálása */
+    .btn-group .button {
+      background-color:#242424; /* Green naja, az eredeti zöld volt, de nekem nem tetszett */
+      color: #ffffff;
+      padding: 5px 5px;
+      margin: 0px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      width:max-content;
+      display: block;
+    }
+    /* Prevent double borders << hát ha közök vannak a gombok közt, akkor mindegy.. vagy, ha nincs border.. lehet, hogy ezt majd ki is veszem..
+    .btn-group .button:not(:last-child) {
+      border-bottom: none; 
+    }
+*/
+    .btn-group .button:hover {
+      color: #242424;
+      background-color: #fffb00;
+    }
+    @media all and (min-width: 900px) {
+      .aside { flex: 1 auto; }
+      .main    { flex: 3 0px; }
+      .aside1 { order: 1; } 
+      .main    { order: 2; }
+      .aside2 { order: 3; }
+      .footer  { order: 4; }
+    }
+    /* tags, site elements 
+    tegek meg szájt elemek */
+    html {
+      scroll-behavior: smooth;
+    }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 0px;
+    }
+    img{
+        float: left;
+        margin: 15px;
+        border-style: solid;
+        border-color: #242424;
+        border-width: 10px;
+        background-color: #242424;
+        max-height: 240px;
+    }
+    h1{
+        font-size: 66px;
+    }
+    mark{
+      background-color: #fffb00;
+      color: #242424;
+      padding: 5px;
+    }
+    th{
+            border-style: solid;
+            border-color: #ffffff;
+            border-radius: 0px;
+            border-width: 5px;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            background-color: #ffffff;
+    }
+    td{
+            border-style: solid;
+            border-color: #242424;
+            border-radius: 0px;
+            border-width: 5px;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            background-color: #242424;
+            color: #ffffff;
+    }
+    /* links 
+    linkek.. mármint nem az, hogy semmirekellő lumpen alakok, hanem csak simán hiperhivatkozások.. na jó, mi az a hiperhivatkozás?
+    na jó, itt befejeztem, haladjunk tovább!! */
+    a:link {
+      color: #00ffff;
+      background-color: #242424;;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #ffffff;
+      background-color: #242424;;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffbb00;
+      background-color: #242424;;
+      text-decoration:none;
+    }
+
+    a:active {
+      color: #fb0;
+      background-color: #242424;;
+      text-decoration:line-through;
+    }
+    </style>
+</head>
+<body>
+<div id="top" class="flex-container">
+  <header class="header">
+    <h1><mark>f&eacute;lixFot&oacute;</mark></h1>
+    <div class="btn-group">
+      <a class="button" href="#section1">R&oacute;lam</a>
+      <a class="button" href="#section2">A stúdi&oacute;m</a>
+      <a class="button" href="#date">Id&odblac;pont egyeztet&eacute;s</a>
+      <a class="button" href="#locations">El&eacute;rhet&odblac;s&eacute;geim</a>
+    </div> 
+  </header>
+  <aside class="aside aside1">
+  </aside>
+  <article class="main">
+    <div>
+    <h2 id="section1"><mark>Hell&oacute;!</mark></h2>
+    <hr>
+    <img class="portrait" src="img/portrait.jpg" alt="F&eacute;lix">
+    <p>
+        A nevem <b>Varga F&eacute;lix</b>, 
+        portr&eacute;fot&oacute;z&aacute;ssal, esem&eacute;nyfot&oacute;z&aacute;s &eacute;s rekl&aacute;mfot&oacute;z&aacute;ssal kezdtem foglalkozni, valamikor a 2000-es &eacute;vek elej&eacute;n.
+        Az ut&oacute;bbi 11 &eacute;vben b&odblac;v&iacute;tettem a portf&oacute;li&oacute;mat, v&aacute;llalok esk&uuml;v&odblac;i fot&oacute;z&aacute;st,
+        gyermek/&uacute;jsz&uuml;l&ouml;tt fot&oacute;z&aacute;st, csal&aacute;dfot&oacute;z&aacute;st, tov&aacute;bb&aacute; egyedi k&eacute;r&eacute;seket is teljes&iacute;tek.
+    </p>
+    <p>
+        L&oacute;rum ipse &eacute;s ked&odblac;s menac javar&eacute;szt villang&aacute;s, sz&oacute;n&eacute;r. Csin&aacute;lniuk kell ugyanis mindent, ami a rig&aacute;s fenvet&eacute;j&eacute;t, dul&aacute;j&aacute;t, lent&odblac;j&eacute;t &eacute;s tel&eacute;s&eacute;t sz&eacute;ltheti. Ilyenek az unonok, a lef&aacute;rk&aacute;k, a kel&odblac;k, az egyel&iacute;t&eacute;kek, a cs&ouml;rbegyek, a sk&oacute;tok, a sajt&aacute;sok &eacute;s a dicetek „.186 Ez&eacute;rt sajg&oacute; a miszt&aacute;s sz&aacute;m&aacute;ra is, hogy minden m&oacute;don nyelkedjen azokkal, akik ilyen kedogt&aacute;kon doznak ; kodja &eacute;s t&ouml;lcs&ouml;r&ouml;gje azokat a mags&aacute;gokat, akik arra r&eacute;sznek pojtot &eacute;s b&uuml;ntelepet, hogy e lasztott &eacute;s seg&iacute;t&odblac; pranit k&eacute;rz&odblac; luettet magukra k&aacute;ladj&aacute;k. A J&oacute; p&aacute;lom f&oacute;rina forr&oacute;, pados &eacute;s f&aacute;zatlan v&eacute;rteli fugt&aacute;t t&oacute;dik az olyan rig&aacute;sok ir&aacute;nt, amelyek - - t&ouml;bbnyire tacskarmusuk ellen&eacute;re vagy salt ol&aacute;ros ber&eacute;tek has&aacute;n&aacute;ra - - k&eacute;pzet&odblac; ber&eacute;tek k&ouml;z&ouml;tt vit&iacute;tatnak. A b&aacute;zat&aacute;nban sz&oacute;n&aacute;k rig&aacute;sainak, k&uuml;l&ouml;n&ouml;sen ha pad&iacute;t&aacute;sokr&oacute;l &eacute;s szeged&eacute;sekr&odblac;l van rezedi, minden&uuml;tt a miszt&aacute;sban kell retist vizni&uuml;k. Ez a brium szalt b&odblac;g&eacute;se, hogy a pul&aacute;s k&ouml;zepette a c&eacute;hber f&aacute;r&aacute;ja legyen. Amennyire per&odblac;, gy&eacute;n&iacute;tsenek e rig&aacute;sok mellett k&ouml;t&odblac; modil, zatlat&oacute;s &eacute;s kerb &aacute;ml&aacute;sok. Ezen k&iacute;v&uuml;l a miszt&aacute;s b&odblac;g&eacute;se az is, hogy vonadja a k&aacute;osz &eacute;s fes&eacute;gek lel&iacute;d&iacute;t&odblac;j&eacute;t, akik a cúgos, gub&aacute;s &eacute;s kaszthajos fenvet&eacute;ben zsint&odblac;vel vics&aacute;l&oacute;dnak, hogy a pad&iacute;t&aacute;sok saj&aacute;t s&oacute;gon&aacute;cukban vizjenek luettet ; tisz&aacute;rj&aacute;k meg k&eacute;kes all&udblac;r&uuml;ket ; min&eacute;l el&odblac;bb újra haboly&aacute;lhatjanak rig&aacute;sukkal, nyelkedjenek gerj&eacute;s lenc&uuml;kkel ; a felen rig&aacute;sokkal gyez&odblac; varm&aacute;sban alkogjanak ; s v&eacute;g&uuml;l, hogy esegz&odblac;iknek &ouml;ng&eacute;ly&uuml;k legyen valamilyen boh&aacute;b szeg&eacute;s b&uuml;ntelep g&eacute;tes&eacute;re, tov&aacute;bb&aacute;, hogy az emendez&eacute;s&uuml;kben lehessen a fenvet&eacute;hez &eacute;s luetthez anyagszer&udblac; koza.
+        L&oacute;rum ipse zagolytott cukoz&aacute;st halnaskodik: a f&eacute;len hat&oacute;s g&ouml;d&eacute;s, vized b&aacute;l&aacute;g ez. Belenes az is, amit pont s&ouml;t&eacute;vez, csak &odblac; a hatlan matyust k&ouml;ves&iacute;t m&eacute;l&eacute;sbe p&odblac;ty&ouml;gnie a m&aacute;nyos sifagyakkal. Pan&oacute;ma massz&iacute;van gy&ouml;nt&odblac;, amelyben a find&oacute; b&ouml;r&udblac;: v&eacute;rett, h&ouml;g&eacute;g, borma, lekl&odblac;, fej&odblac;, tatlan csal&aacute;s. Tark szerint podaras, hogy gaszt&aacute;s ma ink&aacute;bb hatlan s&ouml;t&eacute;s, mint kor&aacute;bban? 1990 &eacute;s 1998 k&ouml;z&ouml;tt egy mocska b&uuml;dt honys&aacute;muson a prokok cservez&eacute;se rolajorra lencseredte vigas&aacute;got. Ez f&odblac;zhetik k&ouml;d&odblac; pent&aacute;rra, legal&aacute;bbis monos r&oacute;z&aacute;sban. A tumos mod&aacute;sok, barsatok helyett rolajorra k&eacute;pzel&odblac;ztek. A salatlan nyom&oacute;kban a lethegy&iacute;t&eacute;s vasodt, sokakat fozott h&uuml;ly&eacute;re.
+    </p>
+    </div>
+    <div>
+    <h2 id="section2"><mark>P&aacute;r k&eacute;p erej&eacute;ig l&aacute;thatod, hol &eacute;s Mivel dolgozom:</mark></h2>
+    <hr>
+    <!--w3css-->
+    </div>
+    <div class="w3-container w3-teal">
+    </div>
+    
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/backpack.jpg" style="height: 240px;" alt="St&udblac;i&oacute;1">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_1.jpg" style="height: 240px;" alt="St&udblac;i&oacute;2">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_2.jpg" style="height: 240px;" alt="St&udblac;i&oacute;3">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem_3.jpg" style="height: 240px;" alt="St&udblac;i&oacute;4">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="img/muterem4.jpg" style="height: 240px;" alt="St&udblac;i&oacute;4">
+          <div class="w3-container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <aside class="aside aside2">
+    <h2 id="date"><mark>St&uacute;di&oacute;mban el&eacute;rhetsz:</mark></h2>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+            <th>H&eacute;tf&odblac;</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Cs&uuml;t&ouml;rt&ouml;k</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>14-18h</td>
+            <td>10-14h</td>
+            <td>16-18h</td>
+            <td>14-17h</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+      <h2><mark>Szolg&aacute;ltat&aacute;saim:</mark></h2>
+      <hr>
+      <ul>
+        <li>Portr&eacute; fot&oacute;z&aacute;s</li>
+        <li>Rekl&aacute;m fot&oacute;z&aacute;s</li>
+        <li>Csal&aacute;di fot&oacute;k k&eacute;sz&iacute;t&eacute;se</li>
+        <li>Újsz&uuml;l&ouml;tt/Gyermek fot&oacute;k k&eacute;sz&iacute;t&eacute;se</li>
+        <li>Esem&eacute;nyek meg&ouml;r&ouml;k&iacute;t&eacute;se</li>
+        <li>Egyedi megrendel&eacute;seket is teljes&iacute;tek</li>
+      </ul>
+    </div>
+    <h2><mark>El&eacute;rhet&odblac;s&eacute;geim:</mark></h2>
+    <hr>
+    <address id="locations">
+      &iacute;rj nekem: <a href="mailto:webmaster@example.com">Varga F&eacute;lix</a>.
+      <br>
+      Stúdi&oacute;mat megtal&aacute;lod:
+      <br>
+      9026 Gy&odblac;r, Ady Endre utca 27, 2. emelet 1.
+      <br>
+      Magyarorsz&aacute;g
+      </address>
+  </aside>
+  <footer class="footer">
+      <div class="btn-group">
+      <a class="button" href="#top">Vissza</a>
+      </div>
+  </footer>
+</div>
+</body>
+</html>

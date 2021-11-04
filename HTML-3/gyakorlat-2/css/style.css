@@ -1,0 +1,31 @@
+body {
+    background-color: lavender;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+    color: indigo;
+    font-size: 30px;
+    border: 1px solid indigo;
+    text-align: center;
+}
+h2 {
+    color: indigo;
+    font-size: 26px;
+}
+p {
+	font-size: 20px;
+}
+li {
+    font-size: 20px;
+}
+.bevezeto {
+    font-size: 24px;
+    font-weight: bold;
+}
+#figyelmeztetes {
+	text-align: center;
+    background-color: indigo;
+    font-size: 24px;
+    color: white;
+}
+
