@@ -35,11 +35,12 @@
   menüpontokat felsorakoztató, de szöveges linkelése a webszájt fontosabb fő felületeinek. Egyelőre ez irreleváns, majd a harmadik, vagy a negyedik leckére
   megoldom (nem lesek ám, de sejtem, hogy a több oldalas weboldal jön, külön CSS fájllal)*/
   .footer {
-    width: auto;
+    width: 100%;
     position: fixed;
     right: 0;
     bottom: 0;
     align-content: flex-end;
+    background-color: #242424ce;
   }
   /*Ez a jobb oldali oszlopa a weboldalnak. Legalábbis ha jól csináltam.. :-D */
   .aside1 {
@@ -143,6 +144,5 @@
     background-color: #ffc400;
     text-decoration:none;
     padding: 2px;
-    border-radius: 4px;
     font-weight: bold;
   }
