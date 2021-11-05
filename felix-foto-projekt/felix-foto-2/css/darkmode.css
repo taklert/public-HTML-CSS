@@ -28,7 +28,7 @@
   .header {
     text-align: justify;
     padding-left: 0px;
-    background-image: url("img/white_alternate.jpg");
+    background-image: url("../img/triangle_pattern.jpg");
     background-size: auto;
   }
   /*Itt jön a lábléc.. Hát egyelőre csak egy "vissza"-gombot tettem bele, lásd lejjebb valahol a legalján.. de terveim azok, hogy majd ide jön egy
@@ -74,8 +74,8 @@
   }
 */
   .btn-group .button:hover {
-    color: #ffffff;
-    background-color: #fffb00;
+    color: #242424;
+    background-color: #ffc400;
   }
   @media all and (min-width: 900px) {
     .aside { flex: 1 auto; }
@@ -91,6 +91,8 @@
     scroll-behavior: smooth;
   }
   body{
+      background-color: #242424;
+      color: #ffffff;
       font-family: Georgia, 'Times New Roman', Times, serif;
       padding: 0px;
   }
@@ -107,7 +109,7 @@
       font-size: 66px;
   }
   mark{
-    background-color: #fffb00;
+    background-color: #ffc400;
     color: #242424;
     padding: 5px;
   }
@@ -137,24 +139,24 @@
   na jó, itt befejeztem, haladjunk tovább!! */
   a:link {
     color: #00ffff;
-    background-color: #ffffff;;
+    background-color: #000000;
     text-decoration: none;
   }
 
   a:visited {
     color: #242424;
-    background-color: #ffffff;;
+    background-color: #000000;
     text-decoration: none;
   }
 
   a:hover {
-    color: #ffbb00;
-    background-color: #ffffff;;
+    color: #ffc400;
+    background-color: #000000;
     text-decoration:none;
   }
 
   a:active {
-    color: #fb0;
-    background-color: #ffffff;;
+    color: #ffc400;
+    background-color: #000000;
     text-decoration:line-through;
   }
