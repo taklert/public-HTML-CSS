@@ -128,21 +128,23 @@
   linkek.. mármint nem az, hogy semmirekellő lumpen alakok, hanem csak simán hiperhivatkozások.. na jó, mi az a hiperhivatkozás?
   na jó, itt befejeztem, haladjunk tovább!! */
   a:link {
-    color: #151314;
+    color: #242424;
+    background-color: #ffc400;
   }
 
   a:visited {
     color: #242424;
+    background-color: #ffffff;
   }
 
   a:hover {
-    color: #e1e1e1;
+    color: #ffc400;
     background-color: #242424;
+    text-decoration:none;
   }
 
-  a:active, a:link, a:visited {
+  a:active{
+    color: #242424;
     background-color: #ffc400;
-    text-decoration:none;
-    padding: 2px;
-    font-weight: bold;
+    text-decoration: none;
   }

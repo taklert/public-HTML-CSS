@@ -39,7 +39,6 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    align-content: flex-end;
   }
   /*Ez a jobb oldali oszlopa a weboldalnak. Legalábbis ha jól csináltam.. :-D */
   .aside1 {
@@ -75,7 +74,7 @@
 */
   .btn-group .button:hover {
     color: #242424;
-    background-color: #fffb00;
+    background-color: #ffc400;
   }
   @media all and (min-width: 900px) {
     .aside { flex: 1 auto; }
@@ -107,16 +106,15 @@
       font-size: 66px;
   }
   mark{
-    background-color: #fffb00;
+    background-color: #ffc400;
     color: #242424;
     padding: 5px;
   }
   th{
           border-style: solid;
           border-color: #ffffff;
-          border-radius: 0px;
           border-width: 5px;
-          width: 70px;
+          width: 25%;
           height: 30px;
           text-align: center;
           background-color: #ffffff;
@@ -124,9 +122,8 @@
   td{
           border-style: solid;
           border-color: #242424;
-          border-radius: 0px;
           border-width: 5px;
-          width: 70px;
+          width: 25%;
           height: 30px;
           text-align: center;
           background-color: #242424;
@@ -136,25 +133,23 @@
   linkek.. mármint nem az, hogy semmirekellő lumpen alakok, hanem csak simán hiperhivatkozások.. na jó, mi az a hiperhivatkozás?
   na jó, itt befejeztem, haladjunk tovább!! */
   a:link {
-    color: #00ffff;
-    background-color: #242424;;
-    text-decoration: none;
+    color: #ffc400;
+    background-color: #242424;
   }
 
   a:visited {
     color: #ffffff;
-    background-color: #242424;;
-    text-decoration: none;
+    background-color: #242424;
   }
 
   a:hover {
-    color: #ffbb00;
-    background-color: #242424;;
+    color: #242424;
+    background-color: #ffc400;;
     text-decoration:none;
   }
 
-  a:active {
-    color: #fb0;
-    background-color: #242424;;
-    text-decoration:line-through;
+  a:active{
+    color: #242424;
+    background-color: #ffc400;
+    text-decoration: none;
   }
