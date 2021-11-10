@@ -1,4 +1,4 @@
-    /*classes. in random order :-D muhhahha*/
+    /*flexeljünk*/
   .flex-container {
     display: -webkit-flex;
     display: flex;  
@@ -11,29 +11,21 @@
     padding: 0px;
     flex: 1 100%;
   }
-  /*the main sequence of the pake, here goes the article, and the image box
-  Ez itten a fő eleme a weboldalnak, ide kerülnek a cikkek, meg a képes izéé, az a képgaléria vagy mi..
-  mármint, ha majd megtanulok képgalériát készíteni.. Egyelőre megelégszem ezzel az agyon div-ezett megoldással*/
+  /*Egyelőre megelégszem ezzel az agyon div-ezett megoldással*/
   .main {
     text-align: justify;
     padding: 10px;
     padding-bottom: 30px;
     min-width: 50%;
   }
-  /* Ez a fejléc.. Itt van a vállalkozás neve, meg a logoja, meg valami durva háttér, ami felkelti a figyelmet és meg is tartja.. elméletileg
-  This is the header of the webpage.. Here goes the branding of the owner,
-  the noteworthy background image, what amaze the reader and hopefully catch his/her attention
-  ^^ azért írok angolul is kommentet, mert egyrészt tanulom az angolt is, másrészt, lehet, hogy létezik olyan angol anyanyelvű ember, akinek
-  az a hobbija, hogy magyar nyelvű weboldalsablonok forráskódját olvassa */
+  /* Ez a fejléc.. */
   .header {
     text-align: justify;
     padding-left: 0px;
     background-image: url("../img/triangle_pattern.jpg");
     background-size: auto;
   }
-  /*Itt jön a lábléc.. Hát egyelőre csak egy "vissza"-gombot tettem bele, lásd lejjebb valahol a legalján.. de terveim azok, hogy majd ide jön egy
-  menüpontokat felsorakoztató, de szöveges linkelése a webszájt fontosabb fő felületeinek. Egyelőre ez irreleváns, majd a harmadik, vagy a negyedik leckére
-  megoldom (nem lesek ám, de sejtem, hogy a több oldalas weboldal jön, külön CSS fájllal)*/
+  /*Itt jön a lábléc..*/
   .footer {
     width: 100%;
     position: fixed;
@@ -69,7 +61,7 @@
     width:max-content;
     display: block;
   }
-  /* Prevent double borders << hát ha közök vannak a gombok közt, akkor mindegy.. vagy, ha nincs border.. lehet, hogy ezt majd ki is veszem..
+  /* alul kilátszó bordák elkerülése..
   .btn-group .button:not(:last-child) {
     border-bottom: none; 
   }
@@ -124,19 +116,12 @@
   td {
           color: #e1e1e1;
   }
-  /* links 
-  linkek.. mármint nem az, hogy semmirekellő lumpen alakok, hanem csak simán hiperhivatkozások.. na jó, mi az a hiperhivatkozás?
-  na jó, itt befejeztem, haladjunk tovább!! */
+  /*linkek..*/
   a:link {
     color: #242424;
     background-color: #ffc400;
   }
-
-  a:visited {
-    color: #242424;
-    background-color: #ffffff;
-  }
-
+  
   a:hover {
     color: #ffc400;
     background-color: #242424;

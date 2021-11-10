@@ -1,4 +1,4 @@
-    /*classes. in random order :-D muhhahha*/
+   
   .flex-container {
     display: -webkit-flex;
     display: flex;  
@@ -6,60 +6,43 @@
     flex-flow: row wrap;
     text-align: justify;
   }
-
   .flex-container > * {
     padding: 0px;
     flex: 1 100%;
   }
-  /*the main sequence of the pake, here goes the article, and the image box
-  Ez itten a fő eleme a weboldalnak, ide kerülnek a cikkek, meg a képes izéé, az a képgaléria vagy mi..
-  mármint, ha majd megtanulok képgalériát készíteni.. Egyelőre megelégszem ezzel az agyon div-ezett megoldással*/
   .main {
     text-align: justify;
     padding: 10px;
     padding-bottom: 30px;
     min-width: 50%;
   }
-  /* Ez a fejléc.. Itt van a vállalkozás neve, meg a logoja, meg valami durva háttér, ami felkelti a figyelmet és meg is tartja.. elméletileg
-  This is the header of the webpage.. Here goes the branding of the owner,
-  the noteworthy background image, what amaze the reader and hopefully catch his/her attention
-  ^^ azért írok angolul is kommentet, mert egyrészt tanulom az angolt is, másrészt, lehet, hogy létezik olyan angol anyanyelvű ember, akinek
-  az a hobbija, hogy magyar nyelvű weboldalsablonok forráskódját olvassa */
   .header {
     text-align: justify;
     padding-left: 0px;
     background-image: url("../img/white_alternate.jpg");
     background-size: auto;
   }
-  /*Itt jön a lábléc.. Hát egyelőre csak egy "vissza"-gombot tettem bele, lásd lejjebb valahol a legalján.. de terveim azok, hogy majd ide jön egy
-  menüpontokat felsorakoztató, de szöveges linkelése a webszájt fontosabb fő felületeinek. Egyelőre ez irreleváns, majd a harmadik, vagy a negyedik leckére
-  megoldom (nem lesek ám, de sejtem, hogy a több oldalas weboldal jön, külön CSS fájllal)*/
   .footer {
     width: auto;
     position: fixed;
     right: 0;
     bottom: 0;
   }
-  /*Ez a jobb oldali oszlopa a weboldalnak. Legalábbis ha jól csináltam.. :-D */
   .aside1 {
     text-align: justify;
     max-width: fit-content;
     padding: 0px;
-    /*background-image: url('img/triangle_pattern.jpg');*/
   }
-  /*Ez meg a bal oldal.. nem politika, tájolás.. :-D */
   .aside2 {
     align-content: flex-end;
     padding: 10px;
     padding-bottom: 30px;
     
   }
-  /* buttonz ez itt a gombok stilizálása */
   .btn-group .button {
-    background-color:#242424; /* Green naja, az eredeti zöld volt, de nekem nem tetszett */
+    background-color:#242424;
     color: #ffffff;
     padding: 5px 5px;
-    margin: 0px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -67,11 +50,6 @@
     width:max-content;
     display: block;
   }
-  /* Prevent double borders << hát ha közök vannak a gombok közt, akkor mindegy.. vagy, ha nincs border.. lehet, hogy ezt majd ki is veszem..
-  .btn-group .button:not(:last-child) {
-    border-bottom: none; 
-  }
-*/
   .btn-group .button:hover {
     color: #242424;
     background-color: #ffc400;
@@ -84,8 +62,6 @@
     .aside2 { order: 3; }
     .footer  { order: 4; }
   }
-  /* tags, site elements 
-  tegek meg szájt elemek */
   html {
     scroll-behavior: smooth;
   }
@@ -110,46 +86,29 @@
     color: #242424;
     padding: 5px;
   }
-  th{
-          border-style: solid;
-          border-color: #ffffff;
-          border-width: 5px;
-          width: 25%;
-          height: 30px;
-          text-align: center;
-          background-color: #ffffff;
-  }
-  td{
-          border-style: solid;
-          border-color: #242424;
-          border-width: 5px;
-          width: 25%;
-          height: 30px;
-          text-align: center;
-          background-color: #242424;
-          color: #ffffff;
-  }
-  /* links 
-  linkek.. mármint nem az, hogy semmirekellő lumpen alakok, hanem csak simán hiperhivatkozások.. na jó, mi az a hiperhivatkozás?
-  na jó, itt befejeztem, haladjunk tovább!! */
-  a:link {
-    color: #ffc400;
+  th, td{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    color: #e1e1e1;
     background-color: #242424;
+    padding: 10px;
+}
+td {
+    color: #e1e1e1;
   }
-
-  a:visited {
-    color: #ffffff;
+  a:link, a:visited, a:active {
     background-color: #242424;
-  }
-
-  a:hover {
-    color: #242424;
-    background-color: #ffc400;;
     text-decoration:none;
+    padding: 5px;
   }
-
-  a:active{
+  a:link{
+    color: #ffc400;
+  }
+  a:visited{
+    color: #e1e1e1;
+  }
+  a:hover{
     color: #242424;
     background-color: #ffc400;
-    text-decoration: none;
   }
