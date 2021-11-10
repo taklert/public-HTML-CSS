@@ -24,13 +24,14 @@ li {
     font-weight: bold;
 }
 #figyelmeztetes {
-	text-align: center;
+	text-align: justify;
     background-color: indigo;
     font-size: 1.5rem;
     color: white;
+    padding: 10px;
 }
 img {
-    width: 40%;
+    max-height: 500px;
     float: left;
     padding-left: 2%;
     padding-right: 2%;
