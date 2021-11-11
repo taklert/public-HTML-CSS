@@ -27,12 +27,10 @@
   }
   /*Itt jön a lábléc..*/
   .footer {
-    width: 100%;
+    width: auto;
     position: fixed;
     right: 0;
     bottom: 0;
-    align-content: flex-end;
-    background-color: #242424ce;
   }
   /*Ez a jobb oldali oszlopa a weboldalnak. Legalábbis ha jól csináltam.. :-D */
   .aside1 {
@@ -121,7 +119,7 @@
     color: #242424;
     background-color: #ffc400;
   }
-  
+
   a:hover {
     color: #ffc400;
     background-color: #242424;
