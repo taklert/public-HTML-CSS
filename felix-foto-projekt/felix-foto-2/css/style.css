@@ -98,7 +98,6 @@ td {
     color: #e1e1e1;
   }
   a:link, a:visited, a:active {
-    background-color: #242424;
     text-decoration:none;
     padding: 5px;
   }
@@ -113,5 +112,7 @@ td {
     background-color: #ffc400;
   }
   .themeswitcherbutton{
-    vertical-align: top;
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }

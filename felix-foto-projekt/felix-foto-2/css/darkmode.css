@@ -46,6 +46,11 @@
     padding-bottom: 30px;
     
   }
+  .themeswitcherbutton{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
   /* buttonz ez itt a gombok stilizálása */
   .btn-group .button {
     background-color: #242424;
@@ -115,19 +120,22 @@
           color: #e1e1e1;
   }
   /*linkek..*/
-  a:link {
-    color: #242424;
-    background-color: #ffc400;
-  }
-
-  a:hover {
-    color: #ffc400;
-    background-color: #242424;
+  a:link, a:visited, a:active {
     text-decoration:none;
+    padding: 5px;
   }
-
-  a:active{
+  a:link{
+    color: #ffc400;
+  }
+  a:visited{
+    color: #e1e1e1;
+  }
+  a:hover{
     color: #242424;
     background-color: #ffc400;
-    text-decoration: none;
+  }
+  .themeswitcherbutton{
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }

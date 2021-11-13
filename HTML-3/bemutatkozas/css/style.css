@@ -1,0 +1,42 @@
+.body {
+    color:#242424;
+    background-color: #e1e1e1;
+    font-family: roboto,sans-serif;
+  }
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    padding: 1px;
+    color: #e1e1e1;
+    background-color: #242424;
+    text-align: justify;
+    font-family: roboto,sans-serif;
+    font-weight: bold;
+  }
+  h1 {
+    text-align: center;
+  }
+  a:link {
+    color: #b38eac;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #ce8771;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #eacb8d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #a3be8e;
+    background-color: transparent;
+    text-decoration: none;
+  }
