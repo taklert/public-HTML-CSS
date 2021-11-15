@@ -28,6 +28,18 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 
 # **HTML-3 feladatok**
 
+**bemutatkozó oldal egyszerűsítve, de külső stíluslappal**
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-3/bemutatkozas"><img src="bemutatkozas_ver_2.jpg"></a>
+
 **mákos guba recept, internal/inline/external-css**
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-3/gyakorlat-1"><img src="guba.jpg"></a>
+
+**falfestés stílus gyakorlat**
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-3/gyakorlat-2"><img src="falfestes.jpg"></a>
+
+**hibakeresés, lakberendezés stílushibák**
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-3/hibakereses"><img src="lakberendezes.jpg"></a>
