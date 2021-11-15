@@ -1,5 +1,6 @@
 # **A mappa tartalma:**
 
+**felix-foto-1**
 - a felix-foto-1 mappában található a HTML2 feladathoz tartozó megoldás
 azért helyeztem saját külön elérési útvonalra, hogy a későbbiekben könnyebben menedzselhető legyen a Félix Fotó projekt.
 - a HTML fájok tartalmazzák a próbálkozásaimat.
@@ -7,7 +8,9 @@ azért helyeztem saját külön elérési útvonalra, hogy a későbbiekben kön
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-1"><img src="felix-foto-projekt.jpg"></a>
 
-**Már van "darkmode" is**
+# **Már van "darkmode" is**
+
+**felix-foto-2**
 
 A felix-foto-2 mappában külső stíluslappal és kicsit mélyebb sárga címsorokkal, valamint sötét változatban látható a felix-foto-1 -ből már ismert egy oldalas HTML dokumentum..
 
