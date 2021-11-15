@@ -4,13 +4,13 @@
 azért helyeztem saját külön elérési útvonalra, hogy a későbbiekben könnyebben menedzselhető legyen a Félix Fotó projekt.
 - a HTML fájok tartalmazzák a próbálkozásaimat.
 
-![felix-foto-1](felix-foto-projekt.jpg "felix-foto-1")
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-1"><img src="felix-foto-projekt.jpg"></a>
 
 **Már van "darkmode" is**
 
 A felix-foto-2 mappában külső stíluslappal és kicsit mélyebb sárga címsorokkal, valamint sötét változatban látható a felix-foto-1 -ből már ismert egy oldalas HTML dokumentum..
 
-![felix-foto-2](felix-foto-2.jpg "felix-foto-2")
 
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-2"><img src="felix-foto-2.jpg"></a>
