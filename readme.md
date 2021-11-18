@@ -43,3 +43,8 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 **hibakeresés, lakberendezés stílushibák**
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-3/hibakereses"><img src="lakberendezes.jpg"></a>
+
+**Félix oldalának második változata, external CSS+"dark mode"**
+<br>a HTML-3 feladatsor részeként
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-2"><img src="felix-foto-2.jpg"></a>
