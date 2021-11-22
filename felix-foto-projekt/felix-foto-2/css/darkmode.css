@@ -131,8 +131,11 @@
     color: #e1e1e1;
   }
   a:hover{
-    color: #242424;
-    background-color: #ffc400;
+    color: #ffc400;
+    background-color: #242424;
+    border-style: dashed;
+    border-color: #ffc400;
+    border-width: 2px;
   }
   .themeswitcherbutton{
     position: absolute;
