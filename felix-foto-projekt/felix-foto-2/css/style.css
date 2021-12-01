@@ -51,8 +51,12 @@
     display: block;
   }
   .btn-group .button:hover {
-    color: #242424;
-    background-color: #ffc400;
+    color: #e1e1e1;
+    background-color: #242424;
+    border-left: solid;
+    border-color: #ffc400;
+    border-width: 10px;
+
   }
   @media all and (min-width: 900px) {
     .aside { flex: 1 auto; }
@@ -81,10 +85,11 @@
   h1{
       font-size: 66px;
   }
-  mark{
-    background-color: #ffc400;
+  h1, h2{
+    background-color: #e1e1e1;
     color: #242424;
     padding: 5px;
+    width: fit-content;
   }
   th, td{
     width: 70px;

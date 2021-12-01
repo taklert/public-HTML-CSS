@@ -1,0 +1,112 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
+   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
+* {
+	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+	box-sizing: border-box; 
+}
+body {
+	background-color: #ffffff;
+	color: #4c596b;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* A FEJLÉC STÍLUSDEFINÍCIÓI */
+header {
+	text-align: center;
+	padding-top: 30px; 
+}
+#logo {
+	width: 100px;
+}
+h1 {
+	font-size: 28px;
+	padding-bottom: 30px;
+}
+nav {
+	background-color: #2a394e;
+	height: 60px;
+	line-height: 60px; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
+	text-align: center;
+}
+.menu-link {
+	color: #ffffff;
+	font-size: 26px;
+	font-family: fantasy, serif;
+	text-decoration: none; 
+	padding-left: 15px;
+	padding-right: 15px;
+	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
+}
+.menu-link:hover {
+	color: #F8F69D;
+	text-decoration: none;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+main {
+	border-right: 1px solid #cacbce;
+	width: 80%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+	float: left;
+}
+article {
+	padding: 20px;
+	text-align: left;
+}
+section {
+	border: 1px solid #cacbce;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+aside {
+	width: 20%;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
+	padding: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	float: right; 
+}
+img {
+	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
+}
+p { 
+	padding: 20px;
+	font-size: 22px;
+}
+h2 {
+	font-size: 28px;
+	padding: 20px;
+}
+h3 {
+	color: #9C1D23;
+	font-size: 24px;
+	padding: 20px;
+}
+address {
+	padding: 10px;
+	font-size: 22px;
+}
+a {
+	color: #5383ad;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.main-paragraph {
+	background-color: #F8F69D;
+	border: 1px solid #cacbce;
+}
+.inverse-h3 {
+	color: #ffffff;
+	background-color: #9C1D23;
+	text-align: center;
+}
+/* A LÁBLÉC STÍLUSDEFINÍCIÓI */
+footer {
+	clear: both;
+	color: #6b6b6b;
+    text-align: center;
+	border-top: 1px solid #cacbce;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.icon {
+	width: 50px;
+}

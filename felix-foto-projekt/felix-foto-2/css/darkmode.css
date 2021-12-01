@@ -70,8 +70,12 @@
   }
 */
   .btn-group .button:hover {
-    color: #242424;
-    background-color: #ffc400;
+    color: #e1e1e1;
+    background-color: #242424;
+    border-color: #ffc400;
+    border-style: dashed;
+    border-width: 2px;
+
   }
   @media all and (min-width: 900px) {
     .aside { flex: 1 auto; }
