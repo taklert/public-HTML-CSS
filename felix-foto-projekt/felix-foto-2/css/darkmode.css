@@ -72,9 +72,9 @@
   .btn-group .button:hover {
     color: #e1e1e1;
     background-color: #242424;
+    border-left: solid;
     border-color: #ffc400;
-    border-style: dashed;
-    border-width: 2px;
+    border-width: 10px;
 
   }
   @media all and (min-width: 900px) {
