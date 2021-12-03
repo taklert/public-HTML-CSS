@@ -33,7 +33,7 @@
     background-color: #242424;
     text-align: center;
     width: 100%;
-    padding: 1%;
+    padding: 5px;
   }
   .aside1 {
     text-align: justify;
@@ -109,6 +109,7 @@
 }
 
   a:link, a:visited, a:active {
+    text-decoration: none;
     padding: 5px;
   }
 
@@ -117,7 +118,7 @@
   }
 
   a:visited {
-    color: #e1e1e1;
+    color: #883a88;
   }
 
   a:hover {
