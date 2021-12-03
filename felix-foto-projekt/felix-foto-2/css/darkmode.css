@@ -27,7 +27,8 @@
   }
   /*Itt jön a lábléc..*/
   .footer {
-    width: auto;
+    width: 100%;
+    align-items: center;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -64,6 +65,12 @@
     width:max-content;
     display: block;
   }
+  .footer-div {
+    background-color: #242424;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+  }
   /* alul kilátszó bordák elkerülése..
   .btn-group .button:not(:last-child) {
     border-bottom: none; 
@@ -72,9 +79,8 @@
   .btn-group .button:hover {
     color: #e1e1e1;
     background-color: #242424;
-    border-left: solid;
+    border-left: 10px solid;
     border-color: #ffc400;
-    border-width: 10px;
 
   }
   @media all and (min-width: 900px) {
@@ -125,21 +131,18 @@
   }
   /*linkek..*/
   a:link, a:visited, a:active {
-    text-decoration:none;
+    text-decoration: none;
     padding: 5px;
   }
   a:link{
     color: #ffc400;
   }
   a:visited{
-    color: #e1e1e1;
+    color: aquamarine;
   }
   a:hover{
-    color: #ffc400;
-    background-color: #242424;
-    border-style: dashed;
-    border-color: #ffc400;
-    border-width: 2px;
+    color: #242424;
+    background-color: #ffc400;
   }
   .themeswitcherbutton{
     position: absolute;

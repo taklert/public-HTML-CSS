@@ -23,10 +23,17 @@
     background-size: auto;
   }
   .footer {
-    width: auto;
+    width: 100%;
+    align-items: center;
     position: fixed;
     right: 0;
     bottom: 0;
+  }
+  .footer-div {
+    background-color: #242424;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
   }
   .aside1 {
     text-align: justify;
@@ -89,9 +96,10 @@
     background-color: #ffc400;
     color: #242424;
     padding: 5px;
+    text-align: left;
     width: fit-content;
   }
-  th, td{
+  th, td {
     width: 70px;
     height: 30px;
     text-align: center;
@@ -99,24 +107,24 @@
     background-color: #242424;
     padding: 10px;
 }
-td {
-    color: #e1e1e1;
-  }
+
   a:link, a:visited, a:active {
-    text-decoration:none;
     padding: 5px;
   }
-  a:link{
+
+  a:link {
     color: #ffc400;
   }
-  a:visited{
+
+  a:visited {
     color: #e1e1e1;
   }
-  a:hover{
+
+  a:hover {
     color: #242424;
     background-color: #ffc400;
   }
-  .themeswitcherbutton{
+  .themeswitcherbutton {
     position: absolute;
     right: 20px;
     top: 20px;
