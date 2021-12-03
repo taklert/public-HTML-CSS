@@ -118,15 +118,18 @@
   }
 
   a:visited {
-    color: #883a88;
+    color: #ffc400;
   }
 
   a:hover {
     color: #242424;
     background-color: #ffc400;
   }
+
   .themeswitcherbutton {
     position: absolute;
     right: 20px;
     top: 20px;
+    background-color: #777777;
+    padding: 4px;
   }
