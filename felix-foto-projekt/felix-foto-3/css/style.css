@@ -6,11 +6,11 @@ body {
 }
 
 header {
-    background-image: url("../img/white_alternate.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
+    text-align: justify;
+    padding-left: 0px;
     height: 600px;
+    background-image: url("../img/white_alternate.jpg");
+    background-size: auto;
 }
 
 main {
