@@ -1,4 +1,9 @@
  /*style starts with the site main elements*/
+ * {
+	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+	box-sizing: border-box; 
+}
 body {
     background-color: #e2e2e2;
     text-align: justify;
@@ -8,20 +13,59 @@ body {
 header {
     text-align: justify;
     padding-left: 0px;
-    height: 600px;
+    height: 20vw;
     background-image: url("../img/white_alternate.jpg");
     background-size: auto;
 }
 
+nav {
+    background-color: #242424;
+    color: #e2e2e2;
+    padding: 1em;
+}
+
 main {
-    width: 100%;
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    padding: 2%;
 }
 
 article {
-    padding: 2%;
+    padding: 2em;
 }
 
 section {
     width: fit-content;
     padding: 2%;
 }
+
+/*styling text elements*/
+h1{
+    font-size: 5em;
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+h2, h3, h4 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    main, aside {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
