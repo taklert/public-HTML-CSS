@@ -204,12 +204,12 @@ img{
 /*Global link styles*/
 a:link, a:visited, a:active {
     text-decoration: none;
-    padding: 5px;
+    padding: 0.5em;
 }
 
   a:link {
     background-color: #242424;
-    color: #e1e1e1;padding-top: 2em;
+    color: #e1e1e1;
 }
   a:visited {
     background-color: #242424;
