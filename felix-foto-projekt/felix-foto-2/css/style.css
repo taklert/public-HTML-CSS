@@ -61,7 +61,7 @@
     color: #e1e1e1;
     background-color: #242424;
     border-left: solid;
-    border-color: #ffc400;
+    border-color: #e3cb13;
     border-width: 10px;
 
   }
@@ -93,7 +93,7 @@
       font-size: 66px;
   }
   h1, h2{
-    background-color: #ffc400;
+    background-color: #e3cb13;
     color: #242424;
     padding: 5px;
     text-align: left;
@@ -114,16 +114,16 @@
   }
 
   a:link {
-    color: #ffc400;
+    color: #e3cb13;
   }
 
   a:visited {
-    color: #ffc400;
+    color: #e3cb13;
   }
 
   a:hover {
     color: #242424;
-    background-color: #ffc400;
+    background-color: #e3cb13;
   }
 
   .themeswitcherbutton {

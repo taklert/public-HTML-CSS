@@ -70,7 +70,7 @@ nav {
     background-color: #242424;
     color: #e1e1e1;
     font-size: 1.5em;
-  }
+}
   
   /* Style the topnav links */
 nav a {
@@ -80,13 +80,13 @@ nav a {
     text-align: center;
     padding: 1.5em 1.5em;
     text-decoration: none;
-  }
+}
   
   /* Change color on hover */
 nav a:hover {
-    background-color: #ffc400;
+    background-color: #e3cb13;
     color: black;
-  }
+}
 
 main {
     width: 100%;
@@ -117,6 +117,7 @@ article {
 section {
     width: fit-content;
     padding-bottom: 2em;
+    padding-top: 1em;
 }
 
 /* Footer */
@@ -127,7 +128,7 @@ footer {
     width: 100%;
     text-align: center;
     background: #242424;
-    height: 2em;
+    height: fit-content;
 }
 
 th, td {
@@ -148,15 +149,16 @@ h1{
     padding-left: 2vw;
     padding-top: 0vw;
     padding-right: 2vw;
-    background-color: #ffc400;
+    background-color: #e3cb13;
     max-width: fit-content;
 }
 h2, h3, h4 {
     font-size: 2em;
     padding-bottom: 0.5em;
-    background-color: #ffc400;
+    background-color: #e3cb13;
     padding: 1em;
     max-width: fit-content;
+    text-align: left;
 }
 
 img{
@@ -179,12 +181,18 @@ img{
     max-height: 320px;
 }
 
+.footerdiv {
+    align-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
     article, aside {   
       width: 100%;
     }
-  }
+}
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -192,24 +200,23 @@ img{
       float: none;
       width: 100%;
     }
-  }
+}
 /*Global link styles*/
 a:link, a:visited, a:active {
     text-decoration: none;
     padding: 5px;
-  }
+}
 
   a:link {
     background-color: #242424;
-    color: #e1e1e1;
-  }
-
+    color: #e1e1e1;padding-top: 2em;
+}
   a:visited {
     background-color: #242424;
     color: #e1e1e1;
-  }
+}
 
   a:hover {
     color: #242424;
-    background-color: #ffc400;
-  }
+    background-color: #e3cb13;
+}
