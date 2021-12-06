@@ -5,49 +5,6 @@
 	box-sizing: border-box; 
 }
 
-/*loading images in a flexible space*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 1.5em;
-}
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding-right: 1.5em;
-    padding-bottom: 1.5em;
-    height: fit-content;
-}
-  
-  .column img {
-    margin-top: 2em;
-    vertical-align: middle;
-    max-height: fit-content;
-}
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 1000px) {
-    .column {
-      flex: 50%;
-      max-height: fit-content;
-      max-width: 50%;
-    }
-}
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-      height: fit-content;
-    }
-}
-/*end of images section*/
-/*beggining of html tags section*/
-
-
 /*Global link styles*/
 a:active {
   text-decoration: none;
@@ -69,6 +26,8 @@ a:hover {
   color: #242424;
   background-color: #e3cb13;
 }
+
+/*beggining of html tags section*/
 
   iframe {
     padding-top: 5%;
@@ -99,7 +58,7 @@ body {
 header {
     text-align: justify;
     padding-left: 0px;
-    height: 22vw;
+    height: 20em;
     background-image: url("../img/white_alternate.jpg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -108,26 +67,11 @@ header {
 
 /* Style the top navigation bar */
 nav {
-    float: left;
-    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #242424;
     color: #e1e1e1;
-}
-  
-  /* Style the topnav links */
-nav a {
-    float: left;
-    display: block;
-    color: #e1e1e1;
-    text-align: left;
-    text-decoration: none;
-    padding: 0.2em;
-}
-  
-  /* Change color on hover */
-nav a:hover {
-    background-color: #e3cb13;
-    color: black;
 }
 
 main {
@@ -184,23 +128,23 @@ th, td {
 
 /*styling text elements*/
 h1{
-    position: absolute;
-    top: 2vw;
-    left: 2vw;
-    font-size: 5em;
-    font-weight: bold;
+    top: 2vmax;
+    left: 2vmax;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #e3cb13;
     max-width: fit-content;
 }
 h2, h3, h4 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: lighter;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     background-color: #e3cb13;
-    padding: 1em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     max-width: fit-content;
     text-align: left;
 }
@@ -215,12 +159,13 @@ img{
 }
 
 .portrait {
-    align-self: left;
+    float: left;
     border-style: solid;
     border-color: #242424;
     border-width: 10px;
     background-color: #242424;
     max-height: 320px;
+    margin-right: 0.5em;
 }
 
 .footerdiv {
@@ -229,22 +174,83 @@ img{
     padding-top: 1em;
 }
 
+/*loading images in a flexible space*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.5em;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  height: fit-content;
+}
+
+.column img {
+  margin-top: 2em;
+  vertical-align: middle;
+  max-height: fit-content;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-height: fit-content;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    height: fit-content;
+  }
+}
+/*end of images section*/
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
-    article, aside {   
-      width: 100%;
-    }
+article, aside {   
+  width: 100%;
 }
-  
-/* Responsive layout - when the screen is less than 600px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    nav a {
-      float: none;
-      width: fit-content;
-    }
 }
 
 @media screen and (max-width: 600px) {
-  nav {
-    padding-top: 2em;
+nav {
+}
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #e1e1e1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {background-color: #242424;}
+
+ul.topnav li a.active {background-color: #e3cb13; color: #242424;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
