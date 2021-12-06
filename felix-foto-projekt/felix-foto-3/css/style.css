@@ -47,6 +47,40 @@
 /*end of images section*/
 /*beggining of html tags section*/
 
+
+/*Global link styles*/
+a:active {
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e3cb13;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #e3cb13;
+}
+
+a:hover {
+  color: #242424;
+  background-color: #e3cb13;
+}
+
+  iframe {
+    padding: 5px;
+}
+
+br {
+  padding-bottom: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -81,10 +115,10 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0.5em 0.5em;
+    color: #e1e1e1;
+    text-align: left;
     text-decoration: none;
+    padding: 0.5em 0.5em;
 }
   
   /* Change color on hover */
@@ -95,13 +129,6 @@ nav a:hover {
 
 main {
     width: 100%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 aside {
@@ -123,6 +150,13 @@ section {
     width: fit-content;
     padding-bottom: 2em;
     padding-top: 1em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer */
@@ -204,41 +238,12 @@ img{
 @media screen and (max-width: 600px) {
     nav a {
       float: none;
-      width: 100%;
+      width: fit-content;
+      background-color: #242424;
     }
 }
 
 @media screen and (max-width: 600px) {
   nav {
     background-color: transparent;
-}
-
-/*Global link styles*/
-  a:link, a:visited, a:active {
-    text-decoration: none;
-    max-width: fit-content;
-    background-color: #242424;
-    color: #e1e1e1;
-}
-
-  a:hover {
-    text-decoration: none;
-    color: #242424;
-    background-color: #e3cb13;
-}
-  p {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-  iframe {
-    padding: 5px;
-}
-  
-  br {
-    padding-bottom: 1.5em;
-}
-
-  li {
-    list-style: none;
 }
