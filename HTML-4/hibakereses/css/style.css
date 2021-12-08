@@ -5,87 +5,83 @@
 	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
 	box-sizing: border-box; 
 }
+
 html {
     scroll-behavior: smooth;
 }
-body {
-    font-family: 'Fuzzy Bubbles', cursive;
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(-90deg, orange, yellow); /* Színátmenetes háttér. */
     margin: 0 auto; /* Ez a sor középre rendezi az egész oldal tartalmát. */
-    padding: 0%;
+    padding: 30px;
     text-align: center;
-    max-width: 100%;
+    max-width: 1024px;
 }
 header {
-    padding: 0%;
+    background: white;
+    padding: 2vw;
+}
+img {
+    max-width: 100%;
 }
 h1{
-    font-size: 10em;
-    color: #ffffff;
-    padding: 2%;
-}
-h2 {
-    text-align: left;
-    color: #6B8754;
-    font-size: 2em;
+    font-size: 3em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 1em;
+    border-bottom:1px solid black;
 }
 nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    background: linear-gradient(-90deg, orange, yellow); /* Színátmenetes háttér. */
-    font-size: 1.5em;
+    padding-top: 1.2em;
 }
 a {
     text-decoration:none;
     color:black;
     font-family: monospace;
-    font-size: 1.5em;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
  a:hover{
     color:#ffa600;
 }
 main {
     background:white;
-    padding: 3vw;
-    font-size: 1.5em;
+    padding:2vw;
+    font-size: 1.2em;
 }
 section {
-    margin-bottom: 5vw;
-    margin-top: 5vw;
-    padding-bottom: 5vw;
+    margin-bottom: 3em;
+}
+h2 {
+    color: #6B8754;
+    font-size: 1.5em;
+    border-bottom:1px solid black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
 }
 p {
-  text-align: justify;
-  padding-bottom: 2vw;
-  padding-left: 4vw;
-  padding-top: 2vw;
-  
+  text-align:justify;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    height: fit-content;
+}
+
 .section-img {
-    float: left;
-    max-height: 300px;
-    padding-bottom: 1vw;
-    padding-right: 2vw;
-    padding-top: 2vw;
+    width: 70%; 
 }
 .center {
     text-align: center;
 }
-.container {
-    width: 100%;
-    background: url(../img/header.jpg);
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 800px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.webpagetitle {
-    top: 1vw;
-    left: 1vw;
-}
+
