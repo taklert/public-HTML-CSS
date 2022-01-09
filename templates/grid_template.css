@@ -1,0 +1,21 @@
+* {
+	margin: 0; /*make initial margins and paddings to zero*/
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto; /* this line align the content of the page center. */
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+header {
+    align-content: left;
+    padding: 2vw;
+}
