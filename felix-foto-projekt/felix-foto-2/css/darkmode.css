@@ -55,7 +55,7 @@
   /* buttonz ez itt a gombok stilizálása */
   .btn-group .button {
     background-color: #242424;
-    color: #e1e1e1;
+    color: #e2e2e2;
     padding: 5px 5px;
     margin: 0px;
     text-align: center;
@@ -77,10 +77,10 @@
   }
 */
   .btn-group .button:hover {
-    color: #e1e1e1;
+    color: #e2e2e2;
     background-color: #242424;
     border-left: 10px solid;
-    border-color: #e3cb13;
+    border-color: #e3d146;
 
   }
   @media all and (min-width: 900px) {
@@ -98,7 +98,7 @@
   }
   body{
       background-color: #242424;
-      color: #e1e1e1;
+      color: #e2e2e2;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       padding: 0px;
   }
@@ -106,21 +106,21 @@
       float: left;
       margin: 15px;
       border-style: solid;
-      border-color: #e1e1e1;
+      border-color: #e2e2e2;
       border-width: 10px;
       background-color: #242424;
       max-height: 240px;
   }
   h1{
       font-size: 66px;
-      background-color: #e3cb13;
+      background-color: #e3d146;
       color: #242424;
       padding: 5px;
       text-align: left;
       width: fit-content;
   }
   mark{
-    background-color: #e3cb13;
+    background-color: #e3d146;
     color: #242424;
     padding: 5px;
   }
@@ -132,7 +132,7 @@
           padding: 10px;
   }
   td {
-          color: #e1e1e1;
+          color: #e2e2e2;
   }
   /*linkek..*/
   a:link, a:visited, a:active {
@@ -140,14 +140,14 @@
     padding: 5px;
   }
   a:link{
-    color: #e3cb13;
+    color: #e3d146;
   }
   a:visited{
     color: aquamarine;
   }
   a:hover{
     color: #242424;
-    background-color: #e3cb13;
+    background-color: #e3d146;
   }
   .themeswitcherbutton{
     position: absolute;

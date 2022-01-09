@@ -58,10 +58,10 @@
     display: block;
   }
   .btn-group .button:hover {
-    color: #e1e1e1;
+    color: #e2e2e2;
     background-color: #242424;
     border-left: solid;
-    border-color: #e3cb13;
+    border-color: #e3d146;
     border-width: 10px;
 
   }
@@ -93,7 +93,7 @@
       font-size: 66px;
   }
   h1, h2{
-    background-color: #e3cb13;
+    background-color: #e3d146;
     color: #242424;
     padding: 5px;
     text-align: left;
@@ -103,7 +103,7 @@
     width: 70px;
     height: 30px;
     text-align: center;
-    color: #e1e1e1;
+    color: #e2e2e2;
     background-color: #242424;
     padding: 10px;
 }
@@ -114,16 +114,16 @@
   }
 
   a:link {
-    color: #e3cb13;
+    color: #e3d146;
   }
 
   a:visited {
-    color: #e3cb13;
+    color: #e3d146;
   }
 
   a:hover {
     color: #242424;
-    background-color: #e3cb13;
+    background-color: #e3d146;
   }
 
   .themeswitcherbutton {

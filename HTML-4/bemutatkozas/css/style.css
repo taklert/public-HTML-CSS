@@ -1,6 +1,6 @@
 .body {
     color:#242424;
-    background-color: #e1e1e1;
+    background-color: #e2e2e2;
     font-family: roboto,sans-serif;
   }
   .sticky {
@@ -8,7 +8,7 @@
     position: sticky;
     top: 5px;
     padding: 1px;
-    color: #e1e1e1;
+    color: #e2e2e2;
     background-color: #242424;
     text-align: justify;
     font-family: roboto,sans-serif;
