@@ -9,33 +9,34 @@ body {
 	background-color: #ffffff;
 	color: #4c596b;
 	font-family: Arial, Helvetica, sans-serif;
+	cursor: crosshair;
 }
 /* A FEJLÉC STÍLUSDEFINÍCIÓI */
 header {
 	text-align: center;
-	padding-top: 30px; 
+	padding-top: 2rem; 
 }
 #logo {
 	width: 100px;
 }
 h1 {
-	font-size: 28px;
-	padding-bottom: 30px;
+	font-size: 2rem;
+	padding-bottom: 2rem;
 }
 nav {
 	background-color: #2a394e;
-	height: 60px;
-	line-height: 60px; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
+	height: 4rem;
+	line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
 	text-align: center;
 }
 .menu-link {
 	color: #ffffff;
-	font-size: 26px;
+	font-size: 2rem;
 	font-family: fantasy, serif;
 	text-decoration: none; 
-	padding-left: 15px;
-	padding-right: 15px;
-	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
+	padding-left: 1rem;
+	padding-right: 1rem;
+	letter-spacing: 0.06rem; /* A betűk közötti távolságot állítja be. */
 }
 .menu-link:hover {
 	color: #F8F69D;
@@ -44,21 +45,21 @@ nav {
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
 main {
 	border-right: 1px solid #cacbce;
-	width: 80%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+	width: 70%; /* A main elem a kijelző teljes szélességéből 70%-ot fog elfoglalni. */
 	float: left;
 }
 article {
-	padding: 20px;
+	padding: 1.2rem;
 	text-align: left;
 }
 section {
 	border: 1px solid #cacbce;
-	padding: 20px;
-	margin-bottom: 20px;
+	padding: 1.2rem;
+	margin-bottom: 1.2rem;
 }
 aside {
-	width: 20%;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
-	padding: 20px;
+	width: 30%;	/* Az aside elem a kijelző teljes szélességéből 30%-ot fog elfoglalni. */
+	padding: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
 	float: right; 
 }
@@ -109,4 +110,12 @@ footer {
 }
 .icon {
 	width: 50px;
+}
+
+.heropic {
+	min-width: 600px;
+	min-height: 800px;
+	background: url(../img/paintball-1.jpg);
+	background-size: cover;
+
 }
