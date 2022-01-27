@@ -49,7 +49,7 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-2"><img src="/thumbnails/felix-foto-2.jpg"></a>
 
-**A Bootstrap leckék első része, egy lapozó, zöldségekkel és a méretbeállításos képernyőképek**
-<br>A screenshots mappában találhatók a képernyőképek a devtoolban megnyitott "container-fluid", vagy "container" osztályú div elemek töréspontjain készült képernyőfotók.
+**A Bootstrap leckék első része, egy lapozó, zöldségekkel és a "töréspontos" képernyőképek**
+<br>A screenshots mappában találhatók a képernyőképek a devtoolban megnyitott "container-fluid", vagy "container" osztályú div elemek töréspontjain készült képernyőfotókkal.
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/bootstrap_1"><img src="/thumbnails/bootstrap_1-carousel.jpg"></a>
