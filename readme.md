@@ -48,3 +48,7 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 <br>a HTML-3 feladatsor részeként
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/felix-foto-projekt/felix-foto-2"><img src="/thumbnails/felix-foto-2.jpg"></a>
+
+**A Bootstrap leckék első része, egy lapozó, zöldségekkel és a méretbeállításos képernyőképek**
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/bootstrap_1"><img src="/thumbnails/bootstrap_1-carousel.jpg"></a>
