@@ -1,0 +1,25 @@
+/*This is a CSS file*/
+main {
+  border-left: 10px solid crimson; 
+  border-right: 10px solid crimson;
+}
+
+.carousel-item {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.carousel-item h2 {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.432);
+  padding: 0.2rem 0.8rem; 
+  border-radius: 6px;
+}
