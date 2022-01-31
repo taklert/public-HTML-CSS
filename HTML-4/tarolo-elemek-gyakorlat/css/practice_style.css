@@ -1,0 +1,152 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
+   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
+* {
+	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+	box-sizing: border-box;
+	cursor: crosshair;
+}
+body {
+	background-image: url("../img/camou7.jpg");
+	background-repeat: repeat;
+	color: #F8F69D;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* A FEJLÉC STÍLUSDEFINÍCIÓI */
+header {
+	text-align: center;
+	padding: 1rem;
+	margin-top: 4rem;
+}
+#logo {
+	max-width: 150px;
+	align-items: center;
+	padding: 1rem;
+	-webkit-backdrop-filter: blur(4px);
+  	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+  	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 2rem;
+	font-weight: 900;
+}
+nav {
+	position: sticky;
+	top: 0px;
+	height: 4rem;
+	line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
+	text-align: center;
+	width: 100%;
+	border-top: 2px solid #4b5b41;
+	-webkit-backdrop-filter: blur(4px);
+  	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+  	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+nav link {
+	color: #ffffff;
+	font-size: 26px;
+	font-family: fantasy, serif;
+	text-decoration: none; 
+	padding-left: 15px;
+	padding-right: 15px;
+	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
+}
+nav link:hover {
+	color: #F8F69D;
+	text-decoration: none;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+main {
+	width: 70%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+	float: left;
+}
+article {
+	text-align: left;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+}
+section {
+	border: 1px solid #5383ad;
+	margin-bottom: 20px;
+	background-color: #4b5b41;
+	padding: 1rem;
+}
+p {
+	max-width: 100%;
+	font-size: 1.2rem;
+	background-color: #1e2e23;
+	border: 1px solid #5383ad;
+	padding: 1rem;
+}
+aside {
+	max-width: 30%;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
+	font-family: 'Courier New', Courier, monospace;
+	float: right; 
+}
+img {
+	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
+	padding: 1rem;
+}
+
+h2 {
+	font-size: 28px;
+	padding: 20px;
+}
+h3 {
+	color: #8c9458;
+	font-size: 24px;
+	padding: 20px;
+}
+address {
+	padding: 10px;
+	font-size: 22px;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.main-paragraph {
+}
+.inverse-h3 {
+	color: #ffffff;
+	background-color: #5383ad;
+	text-align: center;
+}
+/* A LÁBLÉC STÍLUSDEFINÍCIÓI */
+footer {
+	clear: both;
+	color: #6b6b6b;
+    text-align: center;
+	border-top: 2px solid #5383ad;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.icon {
+	width: 6rem;
+}
+
+@media screen and (max-width: 640px)
+{
+	main,
+	aside {
+	  width: 100%;
+	}
+	nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	}
+	.menu-link, .menu-link:hover {
+		font-size: 1.2rem;
+	}
+}

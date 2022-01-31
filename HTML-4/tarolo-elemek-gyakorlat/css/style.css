@@ -1,81 +1,116 @@
 /* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
    Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
-* {
+   * {
 	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
 	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
-	box-sizing: border-box; 
-}
-body {
-	background-color: #ffffff;
-	color: #4c596b;
-	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
 	cursor: crosshair;
 }
-/* A FEJLÉC STÍLUSDEFINÍCIÓI */
+body {
+	background-image: url("../img/camou7.jpg");
+	background-repeat: repeat;
+	color: #F8F69D;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	position: relative;
+}
 header {
 	text-align: center;
-	padding-top: 2rem; 
+	position: relative;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
 }
 #logo {
-	width: 100px;
+	max-width: 8rem;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+mark {
+	position: relative;
+	bottom: 1rem;
+	z-index: 1;
+	color: #4b5b41;
+	background-color: #d9d188;
+	padding: 1rem 2rem;
+	border-top-left-radius: 0.8rem;
+	border-bottom-right-radius: 0.8rem;
 }
 h1 {
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 2rem;
-	padding-bottom: 2rem;
+	font-weight: bold;
 }
 nav {
-	background-color: #2a394e;
+	position: sticky;
+	top: 0px;
 	height: 4rem;
 	line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
 	text-align: center;
+	width: 100%;
+	border-bottom: 2px solid #4b5b41;
+	-webkit-backdrop-filter: blur(4px);
+  	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+  	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	z-index: 2;
 }
-.menu-link {
+nav a {
 	color: #ffffff;
-	font-size: 2rem;
+	font-size: 26px;
 	font-family: fantasy, serif;
 	text-decoration: none; 
-	padding-left: 1rem;
-	padding-right: 1rem;
-	letter-spacing: 0.06rem; /* A betűk közötti távolságot állítja be. */
+	padding-left: 15px;
+	padding-right: 15px;
+	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
 }
-.menu-link:hover {
+nav a:hover {
 	color: #F8F69D;
 	text-decoration: none;
 }
-/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
 main {
-	border-right: 1px solid #cacbce;
-	width: 70%; /* A main elem a kijelző teljes szélességéből 70%-ot fog elfoglalni. */
+	width: 70%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
 	float: left;
 }
 article {
-	padding: 1.2rem;
 	text-align: left;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	padding: 1rem;
 }
 section {
-	border: 1px solid #cacbce;
-	padding: 1.2rem;
-	margin-bottom: 1.2rem;
+	border: 0.2rem dashed #5383ad;
+	border-top-left-radius: 0.8rem;
+	border-bottom-right-radius: 00.8rem;
+	margin-bottom: 20px;
+	background-color: #8c9458;
+	padding: 1rem;
 }
-aside {
-	width: 30%;	/* Az aside elem a kijelző teljes szélességéből 30%-ot fog elfoglalni. */
-	padding: 1.2rem;
-	font-family: 'Courier New', Courier, monospace;
-	float: right; 
+p {
+	max-width: 100%;
+	font-size: 1.2rem;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(75, 91, 65, 0.856);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	border: 0.2rem dashed #5383ad;
+	border-top-left-radius: 0.8rem;
+	border-bottom-right-radius: 0.8rem;
+	padding: 1rem;
+	margin-top: 1rem;
 }
 img {
 	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
-}
-p { 
-	padding: 20px;
-	font-size: 22px;
+	padding: 1rem;
 }
 h2 {
 	font-size: 28px;
 	padding: 20px;
 }
 h3 {
-	color: #9C1D23;
+	color: #F8F69D;
 	font-size: 24px;
 	padding: 20px;
 }
@@ -84,38 +119,51 @@ address {
 	font-size: 22px;
 }
 a {
-	color: #5383ad;
+	color: #ffffff;
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
 }
-.main-paragraph {
-	background-color: #F8F69D;
-	border: 1px solid #cacbce;
-}
 .inverse-h3 {
-	color: #ffffff;
-	background-color: #9C1D23;
-	text-align: center;
+	color: #4b5b41;
+	background-color: #F8F69D;
+	width: fit-content;
+	padding: 4rem 3rem;
+	border-radius: 50%;
 }
-/* A LÁBLÉC STÍLUSDEFINÍCIÓI */
+aside {
+	width: 30%;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
+	font-family: 'Courier New', Courier, monospace;
+	float: right;
+	padding: 1rem;
+}
 footer {
 	clear: both;
 	color: #6b6b6b;
     text-align: center;
-	border-top: 1px solid #cacbce;
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
 .icon {
-	width: 50px;
+	width: 6rem;
 }
-
-.heropic {
-	min-width: 600px;
-	min-height: 800px;
-	background: url(../img/paintball-1.jpg);
-	background-size: cover;
-
+@media screen and (max-width: 640px){
+	main,
+	aside {
+	float: none;
+	width: 100%;
+	}
+	header {
+		margin-top: 4rem;
+	}
+	nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+	}
+	.menu-link, .menu-link:hover {
+		font-size: 1.2rem;
+	}
 }
