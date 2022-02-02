@@ -1,21 +1,95 @@
 * {
 	margin: 0; /*make initial margins and paddings to zero*/
-	padding: 0;
-	box-sizing: border-box; 
-}
-
-html {
-    scroll-behavior: smooth;
+	padding: 0px;
+    box-sizing: border-box;
+    border: none;
 }
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0 auto; /* this line align the content of the page center. */
-    padding: 0px;
+    padding: 0.4rem;
     text-align: center;
     width: 100%;
 }
+
 header {
+    grid-area: header;
     align-content: left;
-    padding: 2vw;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: left;
+    background-color: deeppink;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: left;
+    background-color: deeppink;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: left;
+    background-color: deeppink;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: darkslategray;
+    text-align: justify;
+    background-color: darkgray;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: left;
+    background-color: darkgray;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "main main main main main main main main aside aside aside aside"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-gap: 0.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (min-width: 1400px) {
+    .grid-container {
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "main main main main aside aside aside aside footer footer footer footer";
+}
+}
+
+@media screen and (max-width: 640px) {
+    .grid-container {
+        grid-template-areas:
+        "header header header header header header header header header header header header"
+        "main main main main main main main main main main main main"
+        "aside aside aside aside aside aside aside aside aside aside aside aside"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    
 }

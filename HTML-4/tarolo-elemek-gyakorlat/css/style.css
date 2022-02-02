@@ -6,41 +6,89 @@
 	box-sizing: border-box;
 	cursor: crosshair;
 }
-body {
+
+:root {
+	transition-duration: 300ms;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body#index {
+	/*background: rgb(30,46,35);
+	background: linear-gradient(17deg, rgba(30,46,35,1) 0%, rgba(75,91,65,1) 61%, rgba(140,148,88,1) 100%);*/
 	background-image: url("../img/camou7.jpg");
 	background-repeat: repeat;
-	color: #F8F69D;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #e2e2e2;
 	position: relative;
 }
+
+body#arak {
+	background-image: url("../img/camo_5.jpg");
+	background-repeat: repeat;
+	color: #e2e2e2;
+	position: relative;
+}
+
+body#rolunk {
+	background-image: url("../img/camo_4.jpg");
+	background-repeat: repeat;
+	color: #e2e2e2;
+	position: relative;
+}
+
+body#kapcsolat {
+	background-image: url("../img/brutus_camo.jpg");
+	background-repeat: repeat;
+	color: #e2e2e2;
+	position: relative;
+}
+
 header {
 	text-align: center;
 	position: relative;
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(10px);
-	background-color: rgba(75, 91, 65, 0.856);
-	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
 }
+
 #logo {
 	max-width: 8rem;
 	padding: 1rem;
 	margin-bottom: 2rem;
 }
+
+main {
+	width: 70%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+	float: left;
+	margin-top: 1rem;
+}
+
+article {
+	text-align: left;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
 mark {
 	position: relative;
-	bottom: 1rem;
+	bottom: 3rem;
 	z-index: 1;
-	color: #4b5b41;
-	background-color: #d9d188;
-	padding: 1rem 2rem;
+	color: #eff5db;
+	background: #39453b;
+	padding: 1rem;
+	border-bottom: 5px solid #eff5db;
 	border-top-left-radius: 0.8rem;
 	border-bottom-right-radius: 0.8rem;
 }
+
 h1 {
-	font-family: 'Courier New', Courier, monospace;
 	font-size: 2rem;
-	font-weight: bold;
+	font-weight: bolder;
 }
+
+h2, h3 {
+	color: #e2e2e2;
+	font-size: 1.4rem;
+	width: fit-content;
+}
+
 nav {
 	position: sticky;
 	top: 0px;
@@ -48,96 +96,51 @@ nav {
 	line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
 	text-align: center;
 	width: 100%;
-	border-bottom: 2px solid #4b5b41;
-	-webkit-backdrop-filter: blur(4px);
-  	backdrop-filter: blur(10px);
+	border-bottom: 1px solid #4b5b41;
 	background-color: rgba(75, 91, 65, 0.856);
-  	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
 	z-index: 2;
 }
+
 nav a {
 	color: #ffffff;
-	font-size: 26px;
-	font-family: fantasy, serif;
+	font-size: 1.4rem;
 	text-decoration: none; 
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 1rem;
 	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
 }
+
 nav a:hover {
-	color: #F8F69D;
+	color: #eff5db;
 	text-decoration: none;
+	background: #39453b;
+    box-shadow: 0 0 5px #39453b,
+                0 0 25px #39453b, 
+                0 0 50px #f8f79dec,
+                0 0 100px #f8f79dde;
+    transition: all 300ms ease-in-out;
+	border-bottom: 5px solid #eff5db;
+	border-bottom-right-radius: 1rem;
+	border-top-left-radius: 1rem;
 }
-main {
-	width: 70%; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
-	float: left;
-}
-article {
-	text-align: left;
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(10px);
-	background-color: rgba(75, 91, 65, 0.856);
-	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-	padding: 1rem;
-}
-section {
-	border: 0.2rem dashed #5383ad;
-	border-top-left-radius: 0.8rem;
-	border-bottom-right-radius: 00.8rem;
-	margin-bottom: 20px;
-	background-color: #8c9458;
-	padding: 1rem;
-}
-p {
+
+p, h2 {
 	max-width: 100%;
-	font-size: 1.2rem;
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(10px);
-	background-color: rgba(75, 91, 65, 0.856);
-	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-	border: 0.2rem dashed #5383ad;
+	border-bottom: 5px solid #eff5db;
+	background-color: rgba(75, 91, 65, 0.90);
 	border-top-left-radius: 0.8rem;
 	border-bottom-right-radius: 0.8rem;
 	padding: 1rem;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
-img {
-	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
-	padding: 1rem;
-}
-h2 {
-	font-size: 28px;
-	padding: 20px;
-}
-h3 {
-	color: #F8F69D;
-	font-size: 24px;
-	padding: 20px;
-}
-address {
-	padding: 10px;
-	font-size: 22px;
-}
-a {
-	color: #ffffff;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-.inverse-h3 {
-	color: #4b5b41;
-	background-color: #F8F69D;
-	width: fit-content;
-	padding: 4rem 3rem;
-	border-radius: 50%;
-}
+
 aside {
 	width: 30%;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
 	font-family: 'Courier New', Courier, monospace;
 	float: right;
-	padding: 1rem;
+	margin-top: 1rem;
 }
+
 footer {
 	clear: both;
 	color: #6b6b6b;
@@ -145,12 +148,102 @@ footer {
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
-.icon {
-	width: 6rem;
+
+iframe {
+	max-width: 100%;
 }
+
+img {
+	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
+	padding: 1rem;
+}
+
+address {
+	width: fit-content;
+	padding: 10px;
+	font-size: 22px;
+	background-color: #39453b;
+	border-left: 15px solid #ef3939;
+	border-bottom-left-radius: 1rem;
+}
+
+a {
+	color: #ef3939;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.action {
+	color: #eff5db;
+	background-color: #ef3939;
+}
+
+.prices-h2 {
+	color: #e2e2e2;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prices-paragraph {
+	color: #6c5823;
+	background-color: #d6d4ad;
+
+}
+
+.prices-paragraph-advanced {
+	color: #39453b;
+	background-color: #bdb17d;
+}
+
+.prices-paragraph-pro {
+	color: #d6d4ad;
+	background-color: #6c5823;
+}
+
+.icon {
+	width: 4rem;
+	background-color: #eff5db;
+	padding: 0.2rem;
+	border-radius: 50%;
+	border: 1px solid;
+	border-color: #eff5db;
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.8);
+
+}
+
+.hero {
+	background-image: url("../img/camou7.jpg");
+	background-repeat: repeat;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #eff5db;
+	margin-top: 1rem;
+	box-shadow: 20px 20px 20px 40px rgba(0, 0, 0, 0.8) inset;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.blurred-container {
+		-webkit-backdrop-filter: blur(20px);
+		background-color: rgba(75, 91, 65, 0.80);
+		backdrop-filter: blur(20px);
+		box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.8);
+	}
+}
+  
+  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+	.blurred-container {
+		background-color: rgba(75, 91, 65, 0.90);
+		box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.8);
+	}
+}
+
 @media screen and (max-width: 640px){
-	main,
-	aside {
+	main, aside {
 	float: none;
 	width: 100%;
 	}
@@ -164,6 +257,6 @@ footer {
 	z-index: 2;
 	}
 	.menu-link, .menu-link:hover {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 }
