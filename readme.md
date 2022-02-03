@@ -55,11 +55,18 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/bootstrap_1"><img src="/thumbnails/bootstrap_1-carousel.jpg"></a>
 
 
-# **HTML-3 feladatok**
+# **HTML-4 feladatok**
 
 **A Mordor Paintball weboldala, a HTML-4 lecke tárolóelemes része**
 <br>A feladat során átalakítottam az oldalt, kipróbáltam több, számomra érdekes/és/vagy látványos megoldást:
 - mostanában újra divat a skeumorph/neomorph stílus, ezért kipróbáltam az "opálüveg" effektet CSS-ben
 sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ezért ott belőttem helyette egy háttérszínt átlátszósággal.
 
-<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4"><img src="/thumbnails/mordor-paintball.jpg"></a>
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/tarolo-elemek-gyakorlat"><img src="/thumbnails/mordor-paintball.jpg"></a>
+
+**taklert.design - azaz, a bemutatkozó oldalam**
+<br>A saját weboldalam kezdeti design és kód tervezete. Amit még meg szeretnék valósítani:
+- a "hero" képet le fogom cserélni png-ről svg-re, hogy kódból tudjam színezni scriptelni, majd ha már tanulok egy kis JS-t, jQuery-t, VueJS-t, akármit..
+  persze gondolkozom egy igazi Linux-neckbeard megoldáson is: bash scriptből módosítani a színsémát a szerveren napszaknak megfelelően.. de ez még a távoli jövő :-D
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/bemutatkozas"><img src="https://github.com/taklert/public-HTML-CSS/blob/master/thumbnails/taklert_design.png"></a>
