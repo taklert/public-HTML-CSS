@@ -8,7 +8,7 @@
 }
 
 body#kontakt {
-  background-color: #88C0D0;
+  background-color: #d8dee9;
 }
 
 body {
@@ -64,7 +64,6 @@ main {
   grid-area: main;
   align-self: end;
   padding: 1rem;
-  padding-top: 2rem;
   color: #d8dee9;
   border-left: 0.6rem solid #8fbcbb;
   background-color: #4c566a;
@@ -94,9 +93,20 @@ h1 {
   text-align: left;
   color: #4c566a;
 }
-h2, h3, h4 {
+h2, h3 {
+  padding-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+}
+
+h4 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+br {
+  margin-top: 0.6rem;
 }
 
 a:link {
