@@ -62,11 +62,16 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 - mostanában újra divat a skeumorph/neomorph stílus, ezért kipróbáltam az "opálüveg" effektet CSS-ben
 sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ezért ott belőttem helyette egy háttérszínt átlátszósággal.
 
-<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/tarolo-elemek-gyakorlat"><img src="/thumbnails/mordor-paintball.jpg"></a>
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/tarolo-elemek-gyakorlat"><img src="./thumbnails/mordor-paintball.jpg"></a>
 
 **taklert.design - azaz, a bemutatkozó oldalam**
 <br>A saját weboldalam kezdeti design és kód tervezete. Amit még meg szeretnék valósítani:
 - a "hero" képet le fogom cserélni png-ről svg-re, hogy kódból tudjam színezni scriptelni, majd ha már tanulok egy kis JS-t, jQuery-t, VueJS-t, akármit..
   persze gondolkozom egy igazi Linux-neckbeard megoldáson is: bash scriptből módosítani a színsémát a szerveren napszaknak megfelelően.. de ez még a távoli jövő :-D
 
-<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/bemutatkozas"><img src="https://github.com/taklert/public-HTML-CSS/blob/master/thumbnails/taklert_design.jpg"></a>
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/bemutatkozas"><img src="./thumbnails/taklert_design.jpg"></a>
+
+**Hibajavítás a HTML-4 lecke részeként..(kicsit ezt is átszabtam, de csak kicsit :-D**
+<br>A hibajavítós feladat..
+
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/bemutatkozas"><img src="./thumbnails/hibajavitas_screenshot.jpg"></a>
