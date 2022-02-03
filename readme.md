@@ -54,6 +54,9 @@ A képekre kattintva, a hozzá tartozó feladat könyvtárába lépsz.
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/bootstrap_1"><img src="/thumbnails/bootstrap_1-carousel.jpg"></a>
 
+
+# **HTML-3 feladatok**
+
 **A Mordor Paintball weboldala, a HTML-4 lecke tárolóelemes része**
 <br>A feladat során átalakítottam az oldalt, kipróbáltam több, számomra érdekes/és/vagy látványos megoldást:
 - mostanában újra divat a skeumorph/neomorph stílus, ezért kipróbáltam az "opálüveg" effektet CSS-ben
