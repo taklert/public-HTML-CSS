@@ -1,288 +1,287 @@
 /* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
    Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
-   * {
-	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
-	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
-	box-sizing: border-box;
-	cursor: crosshair;
+* {
+  margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+  padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+  box-sizing: border-box;
+  cursor: crosshair;
 }
 
 :root {
-	transition-duration: 300ms;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition-duration: 300ms;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
 body#index {
-	/*background: rgb(30,46,35);
+  /*background: rgb(30,46,35);
 	background: linear-gradient(17deg, rgba(30,46,35,1) 0%, rgba(75,91,65,1) 61%, rgba(140,148,88,1) 100%);*/
-	background-image: url("../img/camou7.jpg");
-	background-repeat: repeat;
-	color: #e2e2e2;
-	position: relative;
+  background-image: url("../img/camou7.jpg");
+  background-repeat: repeat;
+  color: #e2e2e2;
+  position: relative;
 }
 
 body#arak {
-	background-image: url("../img/camo_5.jpg");
-	background-repeat: repeat;
-	color: #e2e2e2;
-	position: relative;
+  background-image: url("../img/camo_5.jpg");
+  background-repeat: repeat;
+  color: #e2e2e2;
+  position: relative;
 }
 
 body#rolunk {
-	background-image: url("../img/camo_4.jpg");
-	background-repeat: repeat;
-	color: #e2e2e2;
-	position: relative;
+  background-image: url("../img/camo_4.jpg");
+  background-repeat: repeat;
+  color: #e2e2e2;
+  position: relative;
 }
 
 body#kapcsolat {
-	background-image: url("../img/brutus_camo.jpg");
-	background-repeat: repeat;
-	color: #e2e2e2;
-	position: relative;
+  background-image: url("../img/brutus_camo.jpg");
+  background-repeat: repeat;
+  color: #e2e2e2;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
-    width: 0.8rem;
+  width: 0.8rem;
 }
-  
+
 body::-webkit-scrollbar-track {
-    background: #39453b;
-	border: 2px solid #8c9458;
-	border-radius: 0.2rem;
+  background: #39453b;
+  border: 2px solid #8c9458;
+  border-radius: 0.2rem;
 }
-  
+
 body::-webkit-scrollbar-thumb {
-    background: #bdb17d;
+  background: #bdb17d;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: #4b5b41;
+  background: #4b5b41;
 }
 
 header {
-	text-align: center;
-	position: relative;
+  text-align: center;
+  position: relative;
 }
 
 #logo {
-	max-width: 8rem;
-	padding: 1rem;
-	margin-bottom: 2rem;
+  max-width: 8rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 main {
-	width: 68vw; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
-	float: left;
-	margin-top: 1vw;
-	margin-bottom: 1vw;
-	margin-left: 0.5vw;
-	margin-right: 0.5vw;
+  width: 68vw; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+  float: left;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 article {
-	text-align: left;
-	padding: 1rem;
-	margin-bottom: 1rem;
-	margin-bottom: 1rem;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 mark {
-	position: relative;
-	bottom: 3rem;
-	z-index: 1;
-	color: #eff5db;
-	background: #39453b;
-	padding: 1rem;
-	border-bottom: 5px solid #eff5db;
-	border-top-left-radius: 0.8rem;
-	border-bottom-right-radius: 0.8rem;
-	font-family: 'Saira Stencil One', cursive;
+  position: relative;
+  bottom: 3rem;
+  z-index: 1;
+  color: #eff5db;
+  background: #39453b;
+  padding: 1rem;
+  border-bottom: 5px solid #eff5db;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  font-family: "Saira Stencil One", cursive;
 }
 
 h1 {
-	font-size: 2rem;
-	font-weight: bolder;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
-h2, h3 {
-	color: #e2e2e2;
-	font-size: 1.4rem;
-	width: fit-content;
+h2,
+h3 {
+  color: #e2e2e2;
+  font-size: 1.4rem;
+  width: fit-content;
 }
 
 nav {
-	position: sticky;
-	top: 0px;
-	height: 4rem;
-	line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
-	text-align: center;
-	width: 100%;
-	border-bottom: 1px solid #4b5b41;
-	background-color: rgba(75, 91, 65, 0.856);
-	z-index: 2;
+  position: sticky;
+  top: 0px;
+  height: 4rem;
+  line-height: 4rem; /* A sormagasság egyenlő a nav elem magasságával, így a tartalom függőlegesen középre kerül. Ez egy hasznos trükk! */
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #4b5b41;
+  background-color: rgba(75, 91, 65, 0.856);
+  z-index: 2;
 }
 
 nav a {
-	color: #ffffff;
-	font-size: 1.4rem;
-	text-decoration: none; 
-	padding: 1rem;
-	letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1rem;
+  letter-spacing: 1px; /* A betűk közötti távolságot állítja be. */
 }
 
 nav a:hover {
-	color: #eff5db;
-	text-decoration: none;
-	background: #39453b;
-    box-shadow: 0 0 5px #39453b,
-                0 0 25px #39453b, 
-                0 0 50px #f8f79dec,
-                0 0 100px #f8f79dde;
-    transition: all 300ms ease-in-out;
-	border-bottom: 5px solid #eff5db;
-	border-bottom-right-radius: 1rem;
-	border-top-left-radius: 1rem;
+  color: #eff5db;
+  text-decoration: none;
+  background: #39453b;
+  box-shadow: 0 0 5px #39453b, 0 0 25px #39453b;
+  transition: all 300ms ease-in-out;
+  border-bottom: 5px solid #eff5db;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
-p, h2 {
-	max-width: 100%;
-	border-bottom: 5px solid #eff5db;
-	background-color: rgba(75, 91, 65, 0.90);
-	border-top-left-radius: 0.8rem;
-	border-bottom-right-radius: 0.8rem;
-	padding: 1rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+p,
+h2 {
+  max-width: 100%;
+  border-bottom: 5px solid #eff5db;
+  background-color: rgba(75, 91, 65, 0.9);
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 aside {
-	width: 29vw;	/* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
-	font-family: 'Courier New', Courier, monospace;
-	float: right;
-	margin-top: 1vw;
-	margin-bottom: 1vw;
-	margin-left: 0.5vw;
-	margin-right: 0.5vw;
+  width: 29vw; /* Az aside elem a kijelző teljes szélességéből 20%-ot fog elfoglalni. */
+  font-family: "Courier New", Courier, monospace;
+  float: right;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 footer {
-	clear: both;
-	color: #6b6b6b;
-    text-align: center;
-	padding-top: 30px;
-	padding-bottom: 20px;
+  clear: both;
+  color: #6b6b6b;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 iframe {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 img {
-	max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
-	padding: 1rem;
+  max-width: 100%; /* Minden kép szélessége maximum annyi lehet, amennyi az őt tartalmazó elem szélessége. */
+  padding: 1rem;
 }
 
 address {
-	width: fit-content;
-	padding: 10px;
-	font-size: 22px;
-	background-color: #39453b;
-	border-left: 15px solid #ef3939;
-	border-bottom-left-radius: 1rem;
+  width: fit-content;
+  padding: 10px;
+  font-size: 22px;
+  background-color: #39453b;
+  border-left: 15px solid #ef3939;
+  border-bottom-left-radius: 1rem;
 }
 
 a {
-	color: #ef3939;
-	text-decoration: none;
+  color: #ef3939;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .action {
-	color: #eff5db;
-	background-color: #ef3939;
+  color: #eff5db;
+  background-color: #ef3939;
 }
 
 .prices-h2 {
-	color: #e2e2e2;
-	background-color: rgba(0, 0, 0, 0.5);
+  color: #e2e2e2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .prices-paragraph {
-	color: #6c5823;
-	background-color: #d6d4ad;
-
+  color: #6c5823;
+  background-color: #d6d4ad;
 }
 
 .prices-paragraph-advanced {
-	color: #39453b;
-	background-color: #bdb17d;
+  color: #39453b;
+  background-color: #bdb17d;
 }
 
 .prices-paragraph-pro {
-	color: #d6d4ad;
-	background-color: #6c5823;
+  color: #d6d4ad;
+  background-color: #6c5823;
 }
 
 .icon {
-	width: 4rem;
-	background-color: #eff5db;
-	padding: 0.2rem;
-	border-radius: 50%;
-	border: 1px solid;
-	border-color: #eff5db;
-	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.8);
-
+  width: 4rem;
+  background-color: #eff5db;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: #eff5db;
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.8);
 }
 
 .hero {
-	background-image: url("../img/camou7.jpg");
-	background-repeat: repeat;
-	padding: 1rem;
-	border-radius: 0.5rem;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #eff5db;
-	margin-top: 1rem;
-	box-shadow: 20px 20px 20px 40px rgba(0, 0, 0, 0.8) inset;
+  background-image: url("../img/camou7.jpg");
+  background-repeat: repeat;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eff5db;
+  margin-top: 1rem;
+  box-shadow: 20px 20px 20px 40px rgba(0, 0, 0, 0.8) inset;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-	.blurred-container {
-		-webkit-backdrop-filter: blur(20px);
-		background-color: rgba(75, 91, 65, 0.80);
-		backdrop-filter: blur(20px);
-		box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
-	}
-}
-  
-  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-	.blurred-container {
-		background-color: rgba(75, 91, 65, 0.90);
-		box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
-	}
+  .blurred-container {
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(75, 91, 65, 0.8);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
+  }
 }
 
-@media screen and (max-width: 640px){
-	main, aside {
-	float: none;
-	width: 100%;
-	}
-	header {
-		margin-top: 4rem;
-	}
-	nav {
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: 2;
-	}
-	.menu-link, .menu-link:hover {
-		font-size: 1.4rem;
-	}
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .blurred-container {
+    background-color: rgba(75, 91, 65, 0.9);
+    box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main,
+  aside {
+    float: none;
+    width: 100%;
+  }
+  header {
+    margin-top: 4rem;
+  }
+  nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+  }
+  .menu-link,
+  .menu-link:hover {
+    font-size: 1.4rem;
+  }
 }
