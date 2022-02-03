@@ -74,4 +74,4 @@ sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ez�
 **Hibajavítás a HTML-4 lecke részeként..(kicsit ezt is átszabtam, de csak kicsit :-D**
 <br>A hibajavítós feladat..
 
-<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/bemutatkozas"><img src="./thumbnails/hibajavitas_screenshot.jpg"></a>
+<a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/hibakereses"><img src="./thumbnails/hibajavitas_screenshot.jpg"></a>
