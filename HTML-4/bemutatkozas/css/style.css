@@ -4,7 +4,7 @@
 }
 
 :root {
-  animation-duration: all 300ms;
+  animation: all 300ms;
 }
 
 body#kontakt {
@@ -50,7 +50,7 @@ nav a:hover, h1 a:hover {
   border-left: 1rem solid #8fbcbb;
   box-shadow: 0 0 2px #2e3440,
               0 0 5px #2e3440;
-  transition: all 300ms ease-in-out;
+  transition: ease-in-out;
 }
 
 img {
