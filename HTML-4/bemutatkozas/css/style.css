@@ -4,7 +4,7 @@
 }
 
 :root {
-  animation-duration: 300ms all;
+  animation-duration: all 300ms;
 }
 
 body#kontakt {
