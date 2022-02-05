@@ -54,7 +54,7 @@ nav a:hover, h1 a:hover {
 }
 
 img {
-  max-height: 100vh;
+  max-height: 100%;
   grid-area: img;
   align-self: end;
   padding-bottom: 1rem;
