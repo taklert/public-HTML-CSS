@@ -73,7 +73,7 @@ header {
 }
 
 main {
-  width: 68vw; /* A main elem a kijelző teljes szélességéből 80%-ot fog elfoglalni. */
+  width: 68vw;
   float: left;
   margin-top: 1vw;
   margin-bottom: 1vw;
