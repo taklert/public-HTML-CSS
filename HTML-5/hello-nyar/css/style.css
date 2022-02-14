@@ -1,0 +1,27 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz. */
+* {
+	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+	box-sizing: border-box; 
+}
+body {
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* A FEJLÉC STÍLUSDEFINÍCIÓI */
+header {
+	text-align: center;
+}
+
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+main {
+	padding-top: 20px;
+}
+div {
+	margin: 0 auto 20px auto; /* Középre igazítja a div elemet. */
+	max-width: 800px; /* A képek 800px szélesek, ezért a tároló elem maximum szélességét is ekkorára állítjuk. */
+}
+img {
+	width: 100%; /* A kép kitölti az őt tartalmazó elem szélességét. (Az oldalon a div szélességével fog megegyezni.) */
+}
+/* A LÁBLÉC STÍLUSDEFINÍCIÓI */
