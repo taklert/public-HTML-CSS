@@ -11,6 +11,13 @@ body {
 /* A FEJLÉC STÍLUSDEFINÍCIÓI */
 header {
 	text-align: center;
+	padding-top: 2rem;
+	border-bottom: 1px solid #cacbce;
+	background-image: url("../img/hatter.png");
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-size: contain;
+	color: #ffffff;
 }
 
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
@@ -25,3 +32,23 @@ img {
 	width: 100%; /* A kép kitölti az őt tartalmazó elem szélességét. (Az oldalon a div szélességével fog megegyezni.) */
 }
 /* A LÁBLÉC STÍLUSDEFINÍCIÓI */
+
+h1 {
+	font-size: 2rem;
+}
+
+.napocska {
+	max-width: 4rem;
+}
+
+footer {
+	background-image: url("../img/hatter.png");
+	background-repeat: repeat;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	height: 4rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 1rem;
+	color: #ffffff;
+}
