@@ -6,50 +6,74 @@
 }
 
 :root {
+	--sunyellow: #fdb441;
 	--lightblue: #ddf8ff;
     --bg-white: #ffffff;
     --border-color: #cacbce;
 	--color-dark: #242424;
     --bg-img: url("../img/hatter.png");
     --cloud: url("../img/felho.png");
-    --summer-bg: url("../img/nyar-hatter.jpg"); 
+    --summer-bg: url("../img/nyar-hatter.jpg");
+	--palmtrees: url("../img/palmtrees.png");
+	background-color: var(--lightblue);
 }
 
 body {
-	background-color: var(--bg-white);
 	font-family: Arial, Helvetica, sans-serif;
+	max-width: 800px; /* A képek 800px szélesek, ezért a tároló elem maximum szélességét is ekkorára állítjuk. */
+	margin: 0 auto;
 }
 /* A FEJLÉC STÍLUSDEFINÍCIÓI */
 header {
+	position: relative;
 	text-align: center;
 	padding: 3rem;
-	border-bottom: 1px solid var(--border-color);
-	background-image: var(--summer-bg);
+	background-color: var(--lightblue);
 	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: cover;
+	background-position: right bottom;
+	background-size: contain;
 	color: var(--color-dark);
+	height: 30vh;
 }
 
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
 main {
 	background-color: var(--lightblue);
+	background-image: var(--bg-img);
+	background-repeat: repeat;
+	max-height: fit-content;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	padding: 1rem;
 }
 div {
 	margin: 0 auto; /* Középre igazítja a div elemet. */
-	max-width: 50rem; /* A képek 800px szélesek, ezért a tároló elem maximum szélességét is ekkorára állítjuk. */
+	max-height: fit-content;
 }
+
+picture {
+	border: none;
+	padding-top: 2rem;
+}
+
 img {
 	width: 100%; /* A kép kitölti az őt tartalmazó elem szélességét. (Az oldalon a div szélességével fog megegyezni.) */
+	border-radius: 2rem;
 }
 /* A LÁBLÉC STÍLUSDEFINÍCIÓI */
 
 h1 {
-	font-size: 6rem;
-}
-
-.napocska {
-	max-width: 4rem;
+	position: absolute;
+	bottom: -5vh;
+	left: 3vh;
+	z-index: 5;
+	font-size: 8vh;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: var(--sunyellow);
+	filter:drop-shadow(
+		2px 2px 2px
+		var(--color-dark)
+	);
 }
 
 footer {
@@ -63,3 +87,75 @@ footer {
 	padding: 1rem;
 	color: var(--bg-white);
 }
+
+.napocska {
+	position: absolute;
+	top: 1vh;
+	left: 4vh;
+	max-width: 14vh;
+	z-index: 1;
+}
+
+.cloud {
+	position: absolute;
+	top: 10vh;
+	max-width: 10vh;
+	z-index: 2;
+	animation: gogocloud 16000ms linear infinite;
+	animation-direction: normal;
+	filter:drop-shadow(0px 0px 6px gray);
+}
+
+.cloud2 {
+	position: absolute;
+	top: 12vh;
+	max-width: 6vh;
+	z-index: 3;
+	animation: gogocloud2 6000ms linear infinite;
+	animation-direction: normal;
+	filter:drop-shadow(0px 0px 6px gray);
+}
+.cloud3 {
+	position: absolute;
+	top: 12vh;
+	max-width: 14vh;
+	z-index: 3;
+	animation: gogocloud3 10000ms linear infinite;
+	animation-direction: normal;
+	filter:drop-shadow(0px 0px 6px gray);
+}
+
+.palmtrees {
+	position: absolute;
+	right: 0vh;
+	bottom: 0vh;
+	max-width: 26vh;
+	z-index: 4;
+}
+
+@keyframes gogocloud {
+	0% {left: -10vmax;
+		opacity: 0%;}
+	10% {opacity: 100%;}
+	95% {opacity: 100%;}
+	100% {left: 20vmax;
+		opacity: 0%;}
+  }
+
+@keyframes gogocloud2 {
+	0% {left: -10vmax;
+		opacity: 0%;}
+	10% {opacity: 100%;}
+	95% {opacity: 100%;}
+	100% {left: 25vmax;
+		opacity: 0%;}
+  }
+
+  @keyframes gogocloud3 {
+	0% {left: 20vmax;
+		opacity: 0%;}
+	10% {opacity: 100%;}
+	95% {opacity: 100%;}
+	100% {left: -2vmax;
+		opacity: 0%;}
+  }
