@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: url('../img/portrait_color.jpg');
+    --nav-bg: url('../img/bg_yellow.svg');
+    --text-color-light: #e2e2e2;
+    --text-color-dark: #242424;
+    --body-bgcolor: #010c10;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-bgcolor);
+    background-image: var(--main-bg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--text-color-light);
+}
+
+.navbar {
+    position: fixed;
+    left: 0vmax;
+    top: 0vmax;
+    width: fit-content;
+    height: 100vh;
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+    position: fixed;
+    transition: width 600ms ease;
+}
+
+span {
+    background-image: var(--nav-bg);
+    background-size: cover;
+}
+
+.main-container {
+    float: right;
+    display: grid;
+    grid-template-areas: 
+    "header main"
+    "aside main"
+    "footer main";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.navbutton {
+    display: flex;
+    flex-direction: row;
+    max-width: min-content;
+}
+
+.navtitle {
+    position: relative;
+    left: -40vh;
+}
+
+.navbutton:hover .navtitle{
+        left: 4vh;
+}
