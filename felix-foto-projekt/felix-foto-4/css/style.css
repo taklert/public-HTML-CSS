@@ -57,6 +57,18 @@ main {
     grid-area: main;
 }
 
+article p {
+    column-count: 3;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-gap: 15px;
+-webkit-column-gap: 15px;
+-moz-column-gap: 15px;
+column-rule: 1px dashed #000000;
+-webkit-column-rule: 1px dashed #000000;
+-moz-column-rule: 1px dashed #000000;
+}
+
 aside {
     grid-area: aside;
 }

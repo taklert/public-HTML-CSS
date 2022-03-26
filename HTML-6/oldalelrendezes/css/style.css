@@ -1,0 +1,42 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
+   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
+* {
+	box-sizing: border-box; /* Erről a következő leckében lesz szó. */
+}
+body {
+	background-color:#ffffff;
+	color: #000000;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	margin:0;
+	padding: 20px 0px;
+}
+/* FEJLÉC */
+header {
+	padding: 20px 40px;
+	background-color: yellow;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+main {
+	width: 75%;
+	float: left;
+	padding: 80px 30px;
+	background-color: aquamarine;
+}
+aside {
+	width: 25%;
+	float: right;
+	padding: 80px 30px;
+	background-color: lightsalmon;
+}
+/* LÁBLÉC */
+footer {
+	clear: both;
+	padding: 10px 30px;
+	background-color: lightslategray;
+}

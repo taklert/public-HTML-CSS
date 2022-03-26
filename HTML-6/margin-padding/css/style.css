@@ -1,0 +1,59 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
+   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
+* {
+	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
+	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
+	box-sizing: border-box; /* Erről a következő leckében lesz szó. */
+}
+body {
+	background-color: #e8e2d6;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+
+header {
+	background: url("../img/tapeta.jpg");
+	height: 25rem;
+	margin: 0 auto;
+	padding: 10rem;
+	justify-items: center;
+}
+
+main {
+	margin: 0rem;
+	padding: 0rem;
+	text-align: center;
+}
+
+h1 {
+	height: 5rem;
+	line-height: 5rem;
+	background-color: #000000;
+	opacity: 0.6;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 3.625rem;
+	font-weight: 700;
+	color: #dcdcda;
+	margin: 0 auto;
+	
+}
+.kepkeret {
+	width: 31.25rem;
+	height: 31.25rem;
+	background-color: #dcdcda;
+	border: 0.7rem solid black;
+	padding: 7.5rem;
+	margin: 2.5rem auto;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+img {
+	width: 100%; /* A kép mindig kitölti a teljes rendelkezésre álló szélességet. */
+}
+a {
+	margin-top: 35px;
+}

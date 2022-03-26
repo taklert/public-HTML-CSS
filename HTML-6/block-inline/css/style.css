@@ -1,0 +1,51 @@
+/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
+   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
+* {
+	box-sizing: border-box; /* Erről a következő leckében lesz szó. */
+}
+body {
+	background-color: #f2eeeb;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	margin: 0;
+}
+/* A FEJLÉC */
+nav {
+	background-color: #590202;
+}
+.menu-link {
+	color: #B8BFA8;
+	text-decoration: none;
+}
+.menu-link:hover {
+	color: #ffffff;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+h1 {
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 50px;
+	color: #733636;
+	font-weight: normal;
+}
+h2 {
+	font-size: 24px;
+}
+p{
+	padding: 30px 0px;
+}
+span {
+	display: inline-block;
+width: 300px;
+height: 200px;
+	color: #bf0426;
+	font-family: 'Dancing Script', cursive;
+	font-size: 28px;
+	font-weight: bold;
+}
+/* LÁBLÉC */
+footer {
+	text-align: center;
+	font-size: 16px;
+}
