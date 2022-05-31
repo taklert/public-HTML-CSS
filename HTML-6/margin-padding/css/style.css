@@ -15,8 +15,7 @@ body {
 header {
 	background: url("../img/tapeta.jpg");
 	height: 25rem;
-	margin: 0 auto;
-	padding: 10rem;
+	padding: 10rem 0 10rem 0;
 	justify-items: center;
 }
 
@@ -28,6 +27,7 @@ main {
 
 h1 {
 	height: 5rem;
+	max-width: fit-content;
 	line-height: 5rem;
 	background-color: #000000;
 	opacity: 0.6;
@@ -36,7 +36,8 @@ h1 {
 	font-size: 3.625rem;
 	font-weight: 700;
 	color: #dcdcda;
-	margin: 0 auto;
+	margin-inline: auto;
+	padding-inline: 5vw;
 	
 }
 .kepkeret {
@@ -56,4 +57,19 @@ img {
 }
 a {
 	margin-top: 35px;
+}
+
+@media screen and (max-width: 50rem){
+
+	h1 {
+		font-size: 2.5rem;
+	}
+	.kepkeret {
+		width: 60vw;
+		height: 60vw;
+		border: 1.5vw solid black;
+		padding: 15vw;
+		margin-block: 5vw;
+		margin-inline: auto;
+	}
 }

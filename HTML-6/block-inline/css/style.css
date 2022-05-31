@@ -3,49 +3,69 @@
 * {
 	box-sizing: border-box; /* Erről a következő leckében lesz szó. */
 }
+
+:root{
+	--bg: #f2eeeb;
+	--fg: #000;
+	--navbg: #590202;
+	--link: #b8bfa8;
+	--link-hover: #fff;
+	--h1clr: #733636;
+	--span-color: #bf0426;
+	--default-font-size: 20px;
+}
 body {
-	background-color: #f2eeeb;
-	color: #000000;
+	background-color: var(--bg);
+	color: var(--fg);
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-size: var(--default-font-size);
 	margin: 0;
 }
 /* A FEJLÉC */
 nav {
-	background-color: #590202;
+	padding-block: var(--default-font-size);
+	background-color: var(--navbg);
 }
 .menu-link {
-	color: #B8BFA8;
+	color: var(--link);
 	text-decoration: none;
+	padding: var(--default-font-size);
+	font-weight: 800;
 }
 .menu-link:hover {
-	color: #ffffff;
+	color: var(--link-hover);
+	background-color: var(--span-color);
+	transition: all ease 1s;
+}
+main{
+	padding-inline: var(--default-font-size);
 }
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
 h1 {
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
-	font-size: 50px;
-	color: #733636;
-	font-weight: normal;
+	font-size: calc(2.5 * var(--default-font-size));
+	color: var(--h1clr);
 }
 h2 {
-	font-size: 24px;
+	font-size: calc(1.2 * var(--default-font-size));
 }
 p{
-	padding: 30px 0px;
+	padding: calc(1.5 * var(--default-font-size)) 0px;
 }
 span {
 	display: inline-block;
-width: 300px;
-height: 200px;
-	color: #bf0426;
+	padding-inline: var(--default-font-size);
+	color: var(--span-color);
 	font-family: 'Dancing Script', cursive;
-	font-size: 28px;
-	font-weight: bold;
+	font-size: calc(1.4 * var(--default-font-size));
+	font-weight: 800;
 }
 /* LÁBLÉC */
 footer {
 	text-align: center;
-	font-size: 16px;
+	font-size: calc (0.8 * var(--default-font-size));
+}
+.inline {
+	display: inline;
 }

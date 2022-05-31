@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Side bar menu</title>
+</head>
+<body>
+
+    <div class="side">
+        <h1>
+            <img src="./images/my-logo.png" alt="logo image">
+            My_Logo
+        </h1>
+        <ul>
+            <li class="active"><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-cubes"></i>Products</li>
+            <li><i class="fas fa-info-circle"></i>About</li>
+            <li><i class="fas fa-id-card"></i>Contact</li>
+        </ul>
+        <button id="toggleBtn">
+            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <div class="main">
+        <h1>Main Title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe accusantium, provident doloribus maxime necessitatibus nemo deleniti velit, sequi eius vitae qui nihil accusamus. Ut possimus labore voluptatem doloremque ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium tempore maxime ipsa delectus. Deserunt nemo at error ipsam beatae quas ratione consectetur obcaecati, dolorum repudiandae aperiam soluta ipsum, dolores recusandae quaerat! Corporis sapiente ipsum odio eius ab tempore optio perferendis illum officiis modi quibusdam asperiores aut sequi reprehenderit natus totam et impedit, exercitationem possimus illo.</p>
+    </div>
+
+    <script>
+        var side = document.querySelector('.side')
+        var toggleBtn = document.getElementById('toggleBtn')
+        toggleBtn.addEventListener('click', () => {
+            side.classList.toggle('closed')
+        })
+    </script>
+    
+</body>
+</html>

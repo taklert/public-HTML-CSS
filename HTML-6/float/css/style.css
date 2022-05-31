@@ -7,29 +7,29 @@ body {
 	background-color:#e8e2d6;
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
 main {
-	padding: 30px;
+	padding: 1.875rem;
 }
 h1 {
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3.25rem;
 	color: #733636;
 	font-weight: normal;
-	margin: 40px 0px;
+	margin: 2.5rem 0rem;
 }
 h2 {
-	font-size: 24px;
+	font-size: 1.5rem;
 	text-align: right;
-	margin: 40px 0px 60px 0px;
+	margin: 2.5rem 0rem 3.75rem 0rem;
 	font-weight: normal;
 }
 
 p {
-    padding: 30px;
+    padding: 2rem;
 	justify-content: safe;
 }
 .left-floated {
@@ -44,9 +44,29 @@ p {
 	padding: 1rem 1rem 1rem 0rem;
 }
 
+/*max-width of the little sailboatz in any screensize*/
+
+.sailboat {
+	max-width: 15%;
+}
+
+/*max-width of the mountain on large screen sizezzz*/
+
+.mountain {
+	max-width: 25vw;
+}
 
 /* LÁBLÉC */
 footer {
 	text-align: center;
-	font-size: 16px;
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 60rem) {
+		.mountain {
+			max-width: 50%;
+		}
+		h1 {
+			font-size: 2rem;
+		}
 }
