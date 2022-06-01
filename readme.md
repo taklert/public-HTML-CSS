@@ -80,4 +80,4 @@ sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ez�
 
 **A "Helló nyár!" feladat**
 A feladatot egy kis vidámsággal fűszereztem, a felhőcskék mozognak..
-<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/hello-nyar/index.html"><img src="./HTML-5/tumbnails/hello_nyar.jpg"></a>
+<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/hello-nyar/"><img src="./HTML-5/tumbnails/hello_nyar.jpg"></a>
