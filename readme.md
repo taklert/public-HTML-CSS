@@ -80,4 +80,17 @@ sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ez�
 
 **A "Helló nyár!" feladat**
 A feladatot egy kis vidámsággal fűszereztem, a felhőcskék mozognak..
-<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/hello-nyar/"><img src="./HTML-5/tumbnails/hello_nyar.jpg"></a>
+
+<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/hello-nyar/"><img src="./HTML-5/thumbnails/hello_nyar.jpg"></a>
+
+**A hibajavítás-5 feladat**
+
+A feladathoz érkezett képeket kicsit optimalizáltam, sötétebbre vettem a színeket, hogy ne "essen" le a fakó fejléc. Ezt leszámítva nem vittem túlzásba..
+
+<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/hibakereses-5/"><img src="./HTML-5/thumbnails/hibakereses-5.jpg"></a>
+
+**A képek optimalizálása feladat**
+
+A feladathoz érkezett képeket a leírtaknak megfelelően módosítottam/tömörítettem. Az offline képszerkesztéshez a GIMP-et használom és fogom a jövőben is (amíg kénytelen nem leszek Photoshopot használni)..
+
+<a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/kepek-optimalizalasa"><img src="./HTML-5/thumbnails/kepek-optimalizalasa.jpg"></a>
