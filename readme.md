@@ -91,6 +91,6 @@ A feladathoz érkezett képeket kicsit optimalizáltam, sötétebbre vettem a sz
 
 **A képek optimalizálása feladat**
 
-A feladathoz érkezett képeket a leírtaknak megfelelően módosítottam/tömörítettem. Az offline képszerkesztéshez a GIMP-et használom és fogom a jövőben is (amíg kénytelen nem leszek Photoshopot használni)..
+A feladathoz érkezett képeket a leírtaknak megfelelően módosítottam/tömörítettem. Az offline képszerkesztéshez a GIMP-et használtam.
 
 <a href="https://github.com/taklert/public-HTML-CSS/blob/master/HTML-5/kepek-optimalizalasa"><img src="./HTML-5/thumbnails/kepek-optimalizalasa.jpg"></a>
