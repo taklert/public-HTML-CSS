@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans&family=Sacramento&display=swap');
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box; 
+}
+html, body {
+    font-size: 20px;
+}
+body {
+	background-color: #FFFFFF;
+	color: #2F323A;
+	font-family: 'Open Sans', sans-serif;
+}
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+button {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+button:hover {
+    opacity: 0.8;
+}
+.go-button {
+    background-color: forestgreen;
+}
+.go-button img {
+    position: relative;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 1rem;
+}
+.message-button {
+    background-color: chocolate;
+}

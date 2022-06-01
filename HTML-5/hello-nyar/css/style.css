@@ -22,6 +22,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	max-width: 800px; /* A képek 800px szélesek, ezért a tároló elem maximum szélességét is ekkorára állítjuk. */
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 /* A FEJLÉC STÍLUSDEFINÍCIÓI */
 header {
@@ -44,7 +45,7 @@ main {
 	max-height: fit-content;
 	border-top-left-radius: 2rem;
 	border-top-right-radius: 2rem;
-	padding: 1rem;
+	padding-inline: 1rem;
 }
 div {
 	margin: 0 auto; /* Középre igazítja a div elemet. */
@@ -53,12 +54,12 @@ div {
 
 picture {
 	border: none;
-	padding-top: 2rem;
 }
 
 img {
 	width: 100%; /* A kép kitölti az őt tartalmazó elem szélességét. (Az oldalon a div szélességével fog megegyezni.) */
-	border-radius: 2rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
 }
 /* A LÁBLÉC STÍLUSDEFINÍCIÓI */
 
@@ -66,7 +67,7 @@ h1 {
 	position: absolute;
 	bottom: -5vh;
 	left: 3vh;
-	z-index: 5;
+	z-index: 15;
 	font-size: 8vh;
 	font-family: 'Gloria Hallelujah', cursive;
 	color: var(--sunyellow);
@@ -95,67 +96,94 @@ footer {
 	max-width: 14vh;
 	z-index: 1;
 }
-
+/*felhőcskék*/
 .cloud {
-	position: absolute;
-	top: 10vh;
-	max-width: 10vh;
-	z-index: 2;
-	animation: gogocloud 16000ms linear infinite;
+    position: relative;
+	top: 8vh;
+    width: 8vh;
+    height: 8vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: gogocloud 16000ms linear infinite;
 	animation-direction: normal;
 	filter:drop-shadow(0px 0px 6px gray);
+	z-index: 5;
+}
+.cloud::before {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: -2.5vh;
+    top: 1.5vh;
+    content: "";
+    background-color: inherit;
+    border-radius: 50%;
+}
+.cloud::after {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: -2vh;
+    top: 2.8vh;
+    content: "";
+    background-color: inherit;
+    border-radius: 50%;
 }
 
 .cloud2 {
-	position: absolute;
-	top: 12vh;
-	max-width: 6vh;
-	z-index: 3;
-	animation: gogocloud2 6000ms linear infinite;
+    position: relative;
+	top: -4vh;
+    width: 8vh;
+    height: 8vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: gogocloud2 16000ms linear infinite;
 	animation-direction: normal;
 	filter:drop-shadow(0px 0px 6px gray);
+	z-index: 8;
 }
-.cloud3 {
-	position: absolute;
-	top: 12vh;
-	max-width: 14vh;
-	z-index: 3;
-	animation: gogocloud3 10000ms linear infinite;
-	animation-direction: normal;
-	filter:drop-shadow(0px 0px 6px gray);
+.cloud2::before {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: -2vh;
+    top: 1.5vh;
+    content: "";
+    background-color: inherit;
+    border-radius: 50%;
 }
-
+.cloud2::after {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: -2vh;
+    top: 3vh;
+    content: "";
+    background-color: inherit;
+    border-radius: 50%;
+}
 .palmtrees {
 	position: absolute;
 	right: 0vh;
 	bottom: 0vh;
 	max-width: 26vh;
-	z-index: 4;
+	z-index: 10;
 }
 
 @keyframes gogocloud {
-	0% {left: -10vmax;
+	0% {left: -20vmax;
 		opacity: 0%;}
 	10% {opacity: 100%;}
 	95% {opacity: 100%;}
 	100% {left: 20vmax;
 		opacity: 0%;}
-  }
+}
 
 @keyframes gogocloud2 {
-	0% {left: -10vmax;
-		opacity: 0%;}
-	10% {opacity: 100%;}
-	95% {opacity: 100%;}
-	100% {left: 25vmax;
-		opacity: 0%;}
-  }
-
-  @keyframes gogocloud3 {
 	0% {left: 20vmax;
 		opacity: 0%;}
 	10% {opacity: 100%;}
 	95% {opacity: 100%;}
-	100% {left: -2vmax;
+	100% {left: -20vmax;
 		opacity: 0%;}
-  }
+}

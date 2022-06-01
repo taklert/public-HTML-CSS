@@ -64,7 +64,7 @@ span {
 /* LÁBLÉC */
 footer {
 	text-align: center;
-	font-size: calc (0.8 * var(--default-font-size));
+	font-size: calc(0.8 * var(--default-font-size));
 }
 .inline {
 	display: inline;

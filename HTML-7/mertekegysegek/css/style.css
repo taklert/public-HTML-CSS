@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #000000;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 24px;
+}
+/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-weight: normal;
+	margin: 50px;
+}
+div {
+	background: rgba(70, 218, 252, 0.5);
+  	min-height: 20px;
+ 	width: 400px;
+ 	margin: 15px;
+ 	padding: 20px;
+}
+.belso-elem {
+	width: 100%;
+	font-size: 100%;
+}

@@ -75,3 +75,9 @@ sajnos a Firefox egyelőre nem támogatja ezt a megoldást (backround-blur), ez�
 <br>A hibajavítós feladat..
 
 <a href="https://github.com/taklert/public-HTML-CSS/tree/master/HTML-4/hibakereses"><img src="./thumbnails/hibajavitas_screenshot.jpg"></a>
+
+# **HTML-4 feladatok**
+
+**A "Helló nyár!" feladat**
+A feladatot egy kis vidámsággal fűszereztem, a felhőcskék mozognak..
+<a href="https://github.com/taklert/public-HTML-CSS/HTML-5/hello-nyar/index.html"><img src="public-HTML-CSS/HTML-5/tumbnails/hello_nyar.jpg"></a>

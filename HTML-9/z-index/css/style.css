@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+body {
+	color: #000000;
+	font-family: 'Play', sans-serif;
+	padding: 3rem;
+	font-size: 2.2rem;
+	text-align: center;
+}
+main {
+	margin: 0 auto;
+	border: 5px dashed #BF5A36;
+	max-width: 600px;
+	padding: 3rem;
+	/* A main elemhez képest szeretnénk eltolni független helyzetmegadással 
+	a benne lévő második div-et, ezért kell a relatív pozíció. Ha ezt nem állítanánk be, 
+	akkor a body elemhez képest tolná el a böngésző. */
+	position: relative; 
+}
+h1 {
+	margin-bottom: 2rem; 
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+div {
+	width: 300px;
+	height: 300px;
+	line-height: 300px;
+}
+#elso {
+	background-color: #A7C8F2;
+}
+#masodik {
+	background-color: #BF9663;
+	position: absolute;
+	top: 250px;
+    left: 250px;
+}
+#harmadik {
+	background-color: #F25050;
+}

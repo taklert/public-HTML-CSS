@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box; 
+}
+html {
+    font-size: 20px;
+}
+body {
+	background-color: #FFFFFF;
+	color: #2F323A;
+	font-family: 'Open Sans', sans-serif;
+}
+/* A MENÜ STÍLUSDEFINÍCIÓI */
+nav {	
+    background-color: #04AA6D;
+	text-align: left;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+li {
+    display: inline-block;
+    position: relative; /* Azért kell, hogy az almenüt az adott menüponthoz képest tudjuk elhelyezni. */   
+    padding: 0.8rem; 
+}
+.dropdown-menu {
+    margin-top: 0.8rem;
+    position: absolute; /* Gondoskodik az elem pontos elhelyzéséről, és hogy a többi tartalom felett jelenjen meg. */
+    left: 0; /* A főmenüpont bal széléhez igazítjuk az almenüt. */
+    z-index: 1; /* A biztonság kedvéért állítjuk be, nehogy egy másik pozicionált elem eltakarja. */
+    display: none; /* A legördülő menü így rejtve marad. */
+    min-width: 140px; /* A document flow-ból kikerülő elemnek meg kell adni a szélességét. */
+    box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);     
+}
+ul li:hover > .dropdown-menu {
+    display: block; /* Ha olyan menüpont főlé visszük az egérkurzort, aminek van almenüje (dropdown-menu), akkor az megjelenik. */
+}
+.dropdown-menu li {
+    background-color: #04AA6D;
+    display: block; /* Az almenüpontok töltsék ki az almenü szélességét. */
+}
+li:hover {
+    background-color: #666666;
+}

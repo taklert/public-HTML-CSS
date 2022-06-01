@@ -17,8 +17,6 @@ header {
 	height: 30vh;
 	background: url("../img/vitorlas-hatterkep.jpg") no-repeat bottom right;
 	padding: 10vh;
-	border-bottom-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
 }
 h1 {
 	font-family: 'Yellowtail', cursive;
@@ -49,7 +47,7 @@ h2 {
 
 p { 
 	font-size: 1.5rem;
-	padding: 1rem 0rem;
+	padding: 0.5rem;
 	align-self: flex-end;
 }
 span {
@@ -67,7 +65,6 @@ footer {
 	clear: both;
 	background-color: #67bec2;
     text-align: center;
-	height: 3rem;
 }
 
 .card_grid {
@@ -92,8 +89,8 @@ footer {
 }
 
 .sailboat {
-	width: 15vw;
-	height: 15vw;
+	width: 10vw;
+	height: 10vw;
 	background: url("../img/szines-vitorlas.png");
 	background-size: contain;
 }

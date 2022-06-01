@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /*default colors and values*/
+
+    --bg-color: #d0def0;
+    --fg-color: #272a2a;
+    --menu-bgcolor: #35702f;
+    --menu-fgcolor: #ffffff;
+    --article-bgcolor: #f0ffef;
+
+    --default-padding: 1.25rem;
+    --default-margin: 0.5rem;
+
+    --default-font: 'Open Sans', sans-serif;
+    --alternative-font: 'Poppins', sans-serif;
+    --default-font-size: 20px;
+}
+html {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-size: var(--default-font-size);
+    font-family: var(--default-font);
+}
+#logo {
+    width: 6rem;
+    float: left;
+}
+h1,
+h2 {
+    font-family: var(--alternative-font);
+}
+h1 {
+    float: left;
+    font-size: calc(var(--default-font-size) * 2.5);
+    margin: calc(var(--default-margin) * 3);
+}
+h2 {
+    margin-block: calc(var(--default-margin) * 1.5);
+}
+nav {
+    clear: both;
+    font-size: calc(var(--default-font-size) * 1.2);
+    background-color: var(--menu-bgcolor);
+}
+li {
+    display: inline-block;
+    padding: 1.2rem;
+}
+a {
+    color: var(--menu-fgcolor);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--bg-color);
+}
+section {
+    padding: 1rem;
+    margin: var(--default-margin);
+    background-color: var(--article-bgcolor);
+    height: 100%;
+}
+.fel-oszlop {
+    float: left;
+    width: 50%;
+}
+img {
+    width: 60%;
+    margin: 0 var(--default-margin) var(--default-margin) 0;
+    float: left;
+}
+p {
+    font-size: var(--default-font-size);
+    color: #272a2a;
+    font-family: 'Open Sans', sans-serif;
+}
+footer {
+    clear: both;
+    padding: 30px;
+    text-align: center;
+    color: #272a2a;
+    font-family: 'Open Sans', sans-serif;
+}
