@@ -1,18 +1,26 @@
-/* A * jel az úgynevezett univerzális kijelölő, amit ebbe a definícióba írsz, minden elemre érvényes lesz.
-   Ezt a definíciót ezentúl minden stíluslapod elejére írd be! */
 * {
-	margin: 0; /* A margin jellemző külső margót állít be egy elemnek. Itt minden elem margóját lenullázzuk. */
-	padding: 0; /* A padding jellemző belső térközt állít be egy elemnek. Ezt is lenullázzuk, hogy ne a böngésző alapértelmezett értéke  legyen, hanem amit beállítunk. */
-	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+:root {
+	--bgcolor: #eee;
+	--fgcolor: #555;
+	--accent-color: #67bec2;
+	--card-bgcolor: #d4c64b;
+	--transparent-bg: rgba(0,0,0,0.6);
+	--border-radius: 4px;
+}
+
 body {
-	background-color: #eeeeee;
-	color: #555555;
+	background-color: var(--bgcolor);
+	color: var(--fgcolor);
 	font-family: 'Open Sans', sans-serif;
-	max-width: 1600px; /* Az oldal ne legyen 1920px-nél nagyobb. Így jó meg tudjuk tervezni az elemek maximális méretét. */
+	max-width: 1600px;
 	margin: 0 auto;
 }
-/* A FEJLÉC STÍLUSDEFINÍCIÓI */
+
 header {
 	height: 30vh;
 	background: url("../img/vitorlas-hatterkep.jpg") no-repeat bottom right;
@@ -25,18 +33,18 @@ h1 {
 	letter-spacing: 3px;
 	text-align: center;
 	color: #ffffff;
-	background-color: rgba(0,0,0,0.6);
+	background-color: var(--transparent-bg);
 	min-height: 10vh;
 	line-height: 10vh;
 }
 
 #focim-kiemeles {
-	color: #67bec2;
+	color: var(--accent-color);
 	margin-block: 10vh;
 	min-height: 12vh;
 	line-height: 12vh;
 }
-/* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
+
 main {
 	padding: 2rem;
 }
@@ -60,10 +68,10 @@ img {
 img:hover {
 	opacity: 0.5;
 }
-/* A LÁBLÉC STÍLUSDEFINÍCIÓI */
+
 footer {
 	clear: both;
-	background-color: #67bec2;
+	background-color: var(--accent-color);
     text-align: center;
 }
 
@@ -78,7 +86,7 @@ footer {
     height: fit-content;
     padding: 1rem;
     text-align: center;
-	background-color: #d4c64b;
+	background-color: var(--card-bgcolor);
 	border-radius: 1rem;
 	margin: 0.5rem;
 }
@@ -130,18 +138,15 @@ footer {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-    	
     	text-align: right;
-		background-color: #d4c64b;
-		border-radius: 1rem;
+		border-radius: var(--border-radius)
 		margin: 0.5rem;
 	}
 
 	.business-card img {
 		max-width: 45%;
-		border-radius: 1rem;
+		border-radius: var(--border-radius);
 	}
-
 	.business-card p {
 		position: absolute;
 		right: 1rem;
@@ -152,13 +157,13 @@ footer {
 	header {
 		height: 30vh;
 		background: url("../img/vitorlas-hatterkep.jpg") no-repeat bottom right;
-		padding: 10vh;
+		padding-inline: 2vh;
 		border-bottom-left-radius: 1rem;
 		border-bottom-right-radius: 1rem;
 	}
 
 	h1 {
-		font-size: 7vw;
+		font-size: 10vw;
 		letter-spacing: normal;
 	}
 }

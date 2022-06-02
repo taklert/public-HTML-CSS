@@ -10,7 +10,7 @@ body {
 	font-size: 1.25rem;
 }
 body#float1 {
-	width: 60vw;
+	width: 80vw;
 	margin-inline: auto;
 }
 /* A FŐ TARTALMI RÉSZ STÍLUSDEFINÍCIÓI */
@@ -69,10 +69,16 @@ footer p{
 }
 
 @media screen and (max-width: 60rem) {
-		.mountain {
+
+	body#float1 {
+		width: 95vw;
+		margin-inline: auto;
+	}
+
+	.mountain {
 			max-width: 50%;
-		}
-		h1 {
+	}
+	h1 {
 			font-size: 2rem;
-		}
+	}
 }
