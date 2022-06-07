@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --box-font-family: sans-serif;
+    --header-font-family: 'quicksand';
+    --fgcolor: #242424;
+    --opaqe-dark-color: #242424f5;
+    --lightcolor: #e2e2e2;
+    --opaqe-lightcolor: #e2e2e2a1;
+    --highlightcolor: #e2cc45;
+    --shadowcolor: #000000;
+    --link-color: #4a86cf;
+    --main-bg: url('../img/white_alternate.jpg');
+    --title-bg: url('../img/bg_yellow.svg');
+    --dark-bg: url('../img/triangle_pattern.jpg');
+    --portrait: url('../img/portrait_bg.jpg');
+    --padding: 1rem;
+}
+
+@media screen and (max-width: 80rem) {
+    body {
+        color: var(--lightcolor);
+        background-color: #000a0f;
+        background-image: var(--portrait);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100vh;
+        padding-inline: var(--padding);
+        padding-block: var(--padding);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 100;
+    }
+
+    header {
+        height: 80vh;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -1rem;
+        top: 2rem;
+        color: var(--lightcolor);
+    }
+
+    button {
+        position: relative;
+        border: none;
+        background-color: var(--opaqe-dark-color);
+        color: var(--lightcolor);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        height: 3rem;
+        cursor: pointer;
+        align-self: flex-end;
+        box-shadow: 0px 0px 4px var(--shadowcolor);
+    }
+    .button_before {
+        position: absolute;
+        left: calc(-3rem);
+        top: 0%;
+        z-index: inherit;
+        width: 3rem;
+        background: inherit;
+        align-items: center;
+        padding: 0.2rem;
+        font-size: medium;
+        box-shadow: 0px 0px 4px var(--shadowcolor);
+    }
+    
+    button:nth-of-type(1) {
+        transform: rotate(-7deg);
+        background-color: var(--lightcolor);
+        color: var(--fgcolor);
+    }
+    
+    button:nth-of-type(2) {
+        transform: rotate(5deg);
+        background-color: cyan;
+        color: #000000;
+    }
+    button:nth-of-type(3) {
+        transform: rotate(10deg);
+        background-color: magenta;
+        color: #000000;
+    }
+    
+    button:nth-of-type(4) {
+        transform: rotate(-5deg);
+        background-color: yellowgreen;
+        color: #000000;
+    }
+    
+    button:nth-of-type(5) {
+        transform: rotate(15deg);
+        background-color: var(--link-color);
+        color: #000000;
+    }
+    
+    button:hover {
+        background-color: var(--highlightcolor);
+        color: var(--fgcolor);
+        transition: all ease 300ms;
+        transform: translateX(1rem);
+    }
+    
+    .active {background-color: #008CBA;} /* Blue */
+
+    main {
+        background: var(--title-bg);
+        padding: var(--padding);
+        color: var(--fgcolor);
+    }
+
+    h1 {
+        font-size: calc(100vw / 9);
+        color: var(--highlight-color);
+        height: fit-content;
+        padding: none;
+        padding-block: none;
+    }
+    p {
+        padding: 0.2rem;
+    }
+    
+}
+
+@media screen and (min-width: 80rem) {
+
+    body {
+        color: var(--lightcolor);
+        background-color: #000a0f;
+        background-image: var(--portrait);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100vh;
+        padding-inline: var(--padding);
+        padding-block: var(--padding);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 100;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -1rem;
+        color: var(--lightcolor);
+    }
+    
+    main {
+        display: flex;
+        position: fixed;
+        right: -1rem;
+        bottom: 2rem;
+        padding-inline: var(--padding);
+        color: var(--fgcolor);
+        transform: rotate(5deg);
+        max-width: fit-content;
+        background: var(--title-bg);
+    }
+    main::before {
+        position: absolute;
+        left: -2rem;
+        top: -4rem;
+        z-index: inherit;
+        content: "";
+        width: 3rem;
+        height: 10rem;
+        background: var(--fgcolor);
+        transform: rotate(40deg);
+        -webkit-backdrop-filter: blur(20px);
+        background-color: rgba(255, 255, 255, 0.445);
+        backdrop-filter: blur(20px);
+        box-shadow: 4px 4px 4px -6px rgba(0, 0, 0, 0.8);
+    }
+    
+    h2, h3, h4 {
+        padding: calc(var(--padding) / 2);
+        max-width: fit-content;
+        max-height: fit-content;
+        border-radius: 0.2rem;
+        margin-block: var(--padding);
+    }
+    
+    h1 {
+        font-size: calc(100vw / 16);
+        padding-block: var(--padding);
+    }
+    
+    p {
+        text-align: justify;
+        text-justify: auto;
+        padding: var(--padding);
+        max-width: 30rem;
+    }
+    
+    button {
+        position: relative;
+        border: none;
+        background-color: var(--opaqe-dark-color);
+        color: var(--lightcolor);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        height: 3rem;
+        cursor: pointer;
+        width: fit-content;
+        align-self: flex-end;
+        box-shadow: 0px 0px 4px var(--shadowcolor);
+    }
+    .button_before {
+        position: absolute;
+        left: calc(-3rem);
+        top: 0%;
+        z-index: inherit;
+        width: 3rem;
+        height: 3rem;
+        background: inherit;
+        align-items: center;
+        padding: 0.2rem;
+        font-size: medium;
+        box-shadow: 0px 0px 4px var(--shadowcolor);
+    }
+    
+    button:nth-of-type(1) {
+        transform: rotate(-7deg);
+        background-color: var(--lightcolor);
+        color: var(--fgcolor);
+    }
+    
+    button:nth-of-type(2) {
+        transform: rotate(5deg);
+        background-color: cyan;
+        color: #000000;
+    }
+    button:nth-of-type(3) {
+        transform: rotate(10deg);
+        background-color: magenta;
+        color: #000000;
+    }
+    
+    button:nth-of-type(4) {
+        transform: rotate(-5deg);
+        background-color: yellowgreen;
+        color: #000000;
+    }
+    
+    button:nth-of-type(5) {
+        transform: rotate(15deg);
+        background-color: var(--link-color);
+        color: #000000;
+    }
+    
+    button:hover {
+        background-color: var(--highlightcolor);
+        color: var(--fgcolor);
+        transition: all ease 300ms;
+        transform: translateX(1rem);
+    }
+    
+    .active {background-color: #008CBA;} /* Blue */
+    
+    .clearfix {
+        clear: both;
+    }
+    
+}
