@@ -45,6 +45,7 @@ h1 {
 	background-image: url("../img/filmtekercs.png");
 	background-position: left;
 	background-repeat: no-repeat;
+	background-size: contain;
 	vertical-align: middle;
 }
 
