@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /*.:document colors:.*/
+    --torta-teteje: rgb(221, 107, 145);
+    --torta-alja: rgb(199, 128, 99);
+    --torta-oldala: rgb(90, 66, 81);
+    --gyertyák: rgb(254, 254, 254);
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+header {
+    position: absolute;
+    top: 10vh;
+    background-color: rgb(221, 107, 145);
+    width: 70vh;
+    height: 20vh;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+main {
+    position: absolute;
+    top: 20vh;
+    background-color: var(--torta-oldala);
+    border-left: 3px solid var(--torta-alja);
+    border-right: 3px solid var(--torta-alja);
+    width: 70vh;
+    height: 30vh;
+    z-index: 3;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--torta-oldala);
+    border-bottom: 10px solid var(--torta-alja);
+    border-left: 3px solid var(--torta-alja);
+    border-right: 3px solid var(--torta-alja);
+    top: 40vh;
+    width: 70vh;
+    height: 20vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.krém {
+    background-color: transparent;
+    border-bottom: 10px solid var(--torta-alja);
+    margin-top: -6.5rem;
+    width: 70vh;
+    height: 20vh;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.gyertya {
+    position: absolute;
+    width: 2rem;
+    height: 10rem;
+    bottom: 0;
+    background-color: var(--gyertyák);
+    border: 1px solid var(--torta-alja);
+}
