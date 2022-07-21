@@ -8,12 +8,12 @@
 :root {
 	--sunyellow: #fdb441;
 	--lightblue: #ddf8ff;
-    --bg-white: #ffffff;
-    --border-color: #cacbce;
+	--bg-white: #ffffff;
+    	--border-color: #cacbce;
 	--color-dark: #242424;
-    --bg-img: url("../img/hatter.png");
-    --cloud: url("../img/felho.png");
-    --summer-bg: url("../img/nyar-hatter.jpg");
+    	--bg-img: url("../img/hatter.png");
+    	--cloud: url("../img/felho.png");
+    	--summer-bg: url("../img/nyar-hatter.jpg");
 	--palmtrees: url("../img/palmtrees.png");
 	background-color: var(--lightblue);
 }

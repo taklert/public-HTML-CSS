@@ -9,198 +9,96 @@
     --box-font-family: sans-serif;
     --header-font-family: 'Quicksand', sans-serif;
     --fgcolor: #242424;
-    --opaqe-dark-color: #242424f5;
-    --lightcolor: #e2e2e2;
-    --opaqe-lightcolor: #e2e2e2a1;
-    --highlightcolor: #e2cc45;
-    --shadowcolor: #000000;
+    --transdarkcolor: #242424d2;
+    --boxgcolor: #e2e2e2;
+    --highlightcolor: #ffe400;
+    --shadowcolor: #aaaaaa;
     --link-color: #4a86cf;
     --main-bg: url('../img/white_alternate.jpg');
     --title-bg: url('../img/bg_yellow.svg');
     --dark-bg: url('../img/triangle_pattern.jpg');
-    --portrait: url('../img/portrait_bg.jpg');
-    --padding: 1rem;
+    --portrait: url('../img/portrait.jpg');
 }
 
-@media screen and(max-width: 40rem) {
-
-    body {
-        color: var(--lightcolor);
-        background-color: var(--shadowcolor);
-        padding-inline: var(--padding);
-        padding-block: var(--padding);
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 100;
-    }
-
-    header {
-        height: 33vh;
-        width: 100%;
-        background: var(--portrait);
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        color: var(--lightcolor);
-    }
-
-    h2,
-    h3,
-    h4 {
-        margin-left: -2rem;
-        margin-bottom: 1rem;
-        background: var(--title-bg);
-        color: var(--fgcolor);
-        padding: 0.2rem 0.4rem 0.2rem 1.2rem;
-        border-top-left-radius: 0.4rem;
-        width: fit-content;
-    }
-
-    h1 {
-        font-size: calc(100vw / 9);
-        color: var(--highlight-color);
-        height: fit-content;
-        padding: none;
-        margin-top: 1rem;
-    }
-    p {
-        padding-block: 0 1rem;
-    }
-
-    main {
-        display: flex;
-        padding-inline: var(--padding);
-        color: var(--fgcolor);
-        -webkit-backdrop-filter: blur(20px);
-        background: url('../img/triangle_pattern.jpg');
-        backdrop-filter: blur(20px);
-        box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.8);
-        border-radius: 0.4rem;
-        border-bottom: 10px solid var(--highlightcolor);
-        color: var(--lightcolor);
-    }
-
-
-    button {
-        position: relative;
-        border: none;
-        background-color: transparent;
-        color: var(--highlightcolor);
-        padding: 0.4rem;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        align-self: flex-end;
-        box-shadow: 0 0 4px var(--shadowcolor);
-        font-family: var(--header-font-family);
-        font-size: 2rem;
-    }
-
-    button:hover {
-        background-color: var(--highlightcolor);
-        color: var(--fgcolor);
-        transition: all ease 300ms;
-        transform: translateX(1rem);
-        z-index: 100;
-    }
+header {
+    height: calc(100vh - 3rem);
+    background: var(--portrait);
+    color: var(--lightcolor);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
-/* 
-
-@media screen and(min-width: 40rem) {
-    body {
-
-        display: flex;
-        color: var(--lightcolor);
-        background-color: var(--shadowcolor);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        height: 100vh;
-        font-family: 'Quicksand', sans-serif;
 
 
-    }
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--boxgcolor);
+}
 
-    header {
-        height: 33vh;
-        width: 100%;
-        background: var(--portrait);
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: var(--boxgcolor);
+    filter: opacity(60%);
+}
 
-    nav {
-        float: right;
-    }
+button {
+    font-size: 2rem;
+    background-color: var(--fgcolor);
+    color: var(--lightcolor);
+    text-align: end;
+}
 
-    h2,
-    h3,
-    h4 {
-        margin-left: -2rem;
-        margin-bottom: 1rem;
-        background: var(--title-bg);
-        color: var(--fgcolor);
-        padding: 0.2rem 0.4rem 0.2rem 1.2rem;
-        border-top-left-radius: 0.4rem;
-        width: fit-content;
-    }
+ul {
+    list-style-type: none;
+}
+a,
+a:active {
+    text-decoration: none;
+}
 
-    h1 {
-        font-size: calc(100vw / 16);
-        font-weight: lighter;
-        font-family: 'Quicksand', sans-serif;
-        color: var(--highlight-color);
-        height: fit-content;
-        padding: none;
-        margin-top: 1rem;
-    }
-    p {
-        padding-block: 0 1rem;
-    }
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--link-color);
+}
 
-    main {
-        float: left;
-        padding-inline: var(--padding);
-        color: var(--fgcolor);
-        -webkit-backdrop-filter: blur(20px);
-        background: url('../img/triangle_pattern.jpg');
-        backdrop-filter: blur(20px);
-        box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.8);
-        border-radius: 0.4rem;
-        border-bottom: 10px solid var(--highlightcolor);
-        color: var(--lightcolor);
-    }
+a:hover {
+    color: var(--fgcolor);
+    background-color: var(--highlightcolor);
+    transition: all 600ms ease;
+}
 
+.menuitem {
+    background-color: none;
+    color: inherit;
+    font-family: var(--header-font-family);
+    transition: all 600ms ease;
+}
 
-    button {
-        position: relative;
-        border: none;
-        background-color: transparent;
-        color: var(--highlightcolor);
-        padding: 0.4rem;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        align-self: flex-end;
-        box-shadow: 0 0 4px var(--shadowcolor);
-        font-family: var(--header-font-family);
-        font-size: 2rem;
-    }
+.menuitem:hover {
+    background-color: var(--highlightcolor);
+    color: var(--fgcolor);
+}
 
-    button:hover {
-        background-color: var(--highlightcolor);
-        color: var(--fgcolor);
-        transition: all ease 300ms;
-        transform: translateX(1rem);
-    }
+.menuitem:visited {
+    color: var(--fgcolor);
+}
 
-    .active {
-        background-color: #008CBA;
-    }
+.active::before {
+    content: ">>";
+    font-size: 1rem;
+    font-weight: 900;
+}
 
-} */
+.active {
+    border-bottom: 2px solid var(--fgcolor);
+}
