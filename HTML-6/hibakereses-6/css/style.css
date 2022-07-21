@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MAIN SITE ELEMENTS*/
+body {
+    background-color: #eeeeee;
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1920px; /* Az oldal ne legyen 1920px-nél nagyobb. Így jó meg tudjuk tervezni az elemek maximális méretét. */
+    margin-inline: auto;
+}
+
+header {
+    height: 30vh;
+    background: url("../img/vitorlas-hatterkep.jpg") no-repeat bottom right;
+    padding: 10vh;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+nav {
+	background-color: #555555;
+	text-decoration: none;
+	padding-block: 0.2rem;
+}
+
+a {
+	text-decoration: none;
+	color: #eeeeee;
+	padding-inline: 0.5rem;
+	padding-block: 0.2rem;
+}
+
+a:hover {
+	background-color: red;
+	color: #eeeeee;
+}
+
+h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+	padding-block: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    align-self: flex-end;
+}
+span {
+    font-family: 'Yellowtail', cursive;
+}
+
+img {
+    width: 100%;
+}
+img:hover {
+    opacity: 0.5;
+}
+
+footer {
+    clear: both;
+    background-color: #67bec2;
+    text-align: center;
+	font-size: 1rem;
+	line-height: 3rem;
+}
+
+/*ID SELECTORS*/
+#highlight {
+    color: #67bec2;
+    margin-block: 10vh;
+    min-height: 12vh;
+    line-height: 12vh;
+}
+
+/*CLASSES*/
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3rem;
+}
+
+.business-card {
+    min-width: 25%;
+    height: fit-content;
+    padding: 1rem;
+    text-align: center;
+    background-color: #d4c64b;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.business-card img {
+    max-height: 50%;
+    border-radius: 1rem;
+}
+
+.sailboat {
+    width: 15vw;
+    height: 15vw;
+    background: url("../img/szines-vitorlas.png");
+    background-size: contain;
+}
+.sailboat:hover {
+    background: url("../img/vitorlas.png");
+    background-size: contain;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*MEDIA QUERYS*/
+@media screen and (min-width: 85rem) {
+
+    .card_grid {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 50rem) {
+
+    header {
+        height: 30vh;
+        background: url("../img/vitorlas-hatterkep.jpg") no-repeat bottom right;
+        padding: 10vh;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: normal;
+    }
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.card_grid {
+        display: grid;
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .business-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        text-align: right;
+        background-color: #d4c64b;
+        border-radius: 1rem;
+        margin: 0.5rem;
+    }
+
+    .business-card img {
+        max-width: 45%;
+        border-radius: 1rem;
+    }
+
+    .business-card p {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+        font-size: 4vw;
+    }
+
+}
+
